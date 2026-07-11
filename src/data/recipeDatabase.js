@@ -49,6 +49,7 @@ function normalizeRecipe(recipe, disease, index) {
     fiber: recipe.fiber || '—',
     cookingTime: recipe.cookingTime || recipe.cookTime || '—',
     servings: recipe.servings || '—',
+    healthBenefits: recipe.healthBenefits || '',
     source: recipe.source || 'Trusted food dataset',
   };
 }

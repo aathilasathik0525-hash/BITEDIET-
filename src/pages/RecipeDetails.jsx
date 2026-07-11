@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import allRecipes from "../data/recipeCatalog";
+import Navbar from "../components/layout/Navbar";
 
 function RecipeDetails() {
   const { id } = useParams();
@@ -14,14 +15,16 @@ function RecipeDetails() {
   const ingredientList = recipe.ingredients || [];
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <img
-        src={recipe.image}
-        alt={recipe.name}
-        className="w-full h-96 object-cover rounded-3xl shadow-lg"
-      />
+    <>
+      <Navbar />
+      <div className="max-w-5xl mx-auto p-6">
+        <img
+          src={recipe.image}
+          alt={recipe.name}
+          className="w-full h-64 md:h-96 object-cover rounded-3xl shadow-lg"
+        />
 
-      <h1 className="text-5xl font-bold mt-8">{recipe.name}</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mt-8">{recipe.name}</h1>
 
       <p className="text-gray-600 mt-2">
         {recipe.mealType || recipe.category} • {recipe.disease}
@@ -99,7 +102,17 @@ function RecipeDetails() {
           ))}
         </ol>
       </div>
-    </div>
+
+      {recipe.healthBenefits && (
+        <div className="mt-10">
+          <h2 className="text-3xl font-bold">Health Benefits</h2>
+          <p className="mt-4 text-gray-700 leading-relaxed bg-green-50 p-4 rounded-xl border border-green-200">
+            {recipe.healthBenefits}
+          </p>
+        </div>
+      )}
+      </div>
+    </>
   );
 }
 

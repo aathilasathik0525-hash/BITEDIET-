@@ -35,7 +35,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center p-4">
 
       <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md">
 

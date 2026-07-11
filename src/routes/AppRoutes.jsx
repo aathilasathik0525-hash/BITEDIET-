@@ -7,6 +7,14 @@ import PatientSelection from "../pages/PatientSelection";
 import Home from "../pages/Home";
 import RecipeDetails from "../pages/RecipeDetails";
 import Settings from "../pages/Settings";
+import Search from "../pages/Search";
+import Profile from "../pages/Profile";
+
+if (!sessionStorage.getItem("app_initialized")) {
+  localStorage.removeItem("userProfile");
+  localStorage.removeItem("patientType");
+  sessionStorage.setItem("app_initialized", "true");
+}
 
 function isAuthenticated() {
   return Boolean(localStorage.getItem("userProfile"));
@@ -16,7 +24,6 @@ function PublicRoute({ children }) {
   if (isAuthenticated()) {
     return <Navigate to="/patient" replace />;
   }
-
   return children;
 }
 
@@ -31,6 +38,8 @@ function ProtectedRoute({ children }) {
     (location.pathname === "/home" ||
       location.pathname.startsWith("/recipe") ||
       location.pathname === "/cookbook" ||
+      location.pathname === "/search" ||
+      location.pathname === "/profile" ||
       location.pathname === "/settings") &&
     !localStorage.getItem("patientType")
   ) {
@@ -52,6 +61,8 @@ function AppRoutes() {
         <Route path="/recipe/:id" element={<ProtectedRoute><RecipeDetails /></ProtectedRoute>} />
         <Route path="/cookbook" element={<ProtectedRoute><Cookbook /></ProtectedRoute>} />
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+        <Route path="/search" element={<ProtectedRoute><Search /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

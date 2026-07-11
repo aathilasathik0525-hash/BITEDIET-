@@ -1,4 +1,6 @@
 import allRecipes from "../data/recipeCatalog";
+import Navbar from "../components/layout/Navbar";
+import RecipeCard from "../components/recipe/RecipeCard";
 
 function Cookbook() {
   const savedIds = JSON.parse(localStorage.getItem("cookbook")) || [];
@@ -8,38 +10,26 @@ function Cookbook() {
   );
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <>
+      <Navbar />
+      <div className="max-w-7xl mx-auto p-6 mt-6">
+        <h1 className="text-4xl font-bold mb-8 text-green-700">
+          ❤️ My Cookbook
+        </h1>
 
-      <h1 className="text-4xl font-bold mb-8">
-        ❤️ My Cookbook
-      </h1>
-
-      {savedRecipes.length === 0 ? (
-        <h2>No recipes saved yet.</h2>
-      ) : (
-        <div className="grid md:grid-cols-3 gap-6">
-
-          {savedRecipes.map((recipe) => (
-            <div
-              key={recipe.id}
-              className="bg-white rounded-xl shadow-lg p-4"
-            >
-              <img
-                src={recipe.image}
-                className="w-full h-52 object-cover rounded-xl"
-              />
-
-              <h2 className="text-xl font-bold mt-3">
-                {recipe.name}
-              </h2>
-
-            </div>
-          ))}
-
-        </div>
-      )}
-
-    </div>
+        {savedRecipes.length === 0 ? (
+          <div className="text-center py-10">
+            <h2 className="text-2xl text-gray-500 font-semibold">No saved recipes yet.</h2>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {savedRecipes.map((recipe) => (
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 

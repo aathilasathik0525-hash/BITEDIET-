@@ -4,11 +4,11 @@ function Hero() {
 
       <div className="max-w-7xl mx-auto px-6 py-24">
 
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold">
           Eat Healthy.
         </h1>
 
-        <h2 className="text-6xl font-bold mt-4">
+        <h2 className="text-4xl md:text-6xl font-bold mt-4">
           Live Better.
         </h2>
 

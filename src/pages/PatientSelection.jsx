@@ -9,7 +9,7 @@ function PatientSelection() {
   };
 
   return (
-    <div className="min-h-screen bg-green-50 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-green-50 flex flex-col justify-center items-center p-6 text-center">
 
       <h1 className="text-5xl font-bold text-green-700 mb-10">
         BiteDiet 🥗

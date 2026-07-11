@@ -91,7 +91,7 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center py-10">
+    <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center py-10 px-4">
       <div className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-2xl">
         <h1 className="text-4xl font-bold text-center text-green-600 mb-2">BiteDiet 🥗</h1>
         <p className="text-center text-gray-500 mb-8">Create Account</p>

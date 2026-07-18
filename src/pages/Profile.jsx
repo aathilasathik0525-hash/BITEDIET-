@@ -97,7 +97,7 @@ function Profile() {
   const handleLogout = () => {
     localStorage.removeItem("userProfile");
     localStorage.removeItem("patientType");
-    window.location.href = "/";
+    window.location.href = "/login";
   };
 
   const menuOptions = [

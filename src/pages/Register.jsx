@@ -216,7 +216,7 @@ function Register() {
         </form>
 
         <p className="text-center mt-6">
-          Already have an account? <Link to="/" className="text-green-600 font-bold">Login</Link>
+          Already have an account? <Link to="/login" className="text-green-600 font-bold">Login</Link>
         </p>
       </div>
     </div>

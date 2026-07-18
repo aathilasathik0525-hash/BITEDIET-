@@ -18,9 +18,28 @@ function normalizeMealType(value) {
   return mealTypeMap[normalized] || 'Dinner';
 }
 
+function getCategoryByKeywords(title, originalCategory) {
+  const lower = String(title).toLowerCase();
+  
+  if (lower.match(/smoothie|tea|coffee|juice|shake|milk|drink|beverage|shorba|soup|rasam|thandai|lassi/i)) {
+    return 'Drink';
+  }
+  if (lower.match(/idli|dosa|chilla|upma|poha|breakfast|paratha|puri|toast|porridge|oats|pancake|roti|appam|puttu|bhurji|pongal|cheela/i)) {
+    return 'Breakfast';
+  }
+  if (lower.match(/chutney|pachadi|ladoo|kheer|halwa|bite|fritter|tikki|chaat|makhana|snack|appetizer|custard|jalebi|barfi|samosa|rasgulla|jamun|kachori|dhokla|vada|pakora|bhel/i)) {
+    return 'Snack';
+  }
+  if (lower.match(/pulao|rice|sambar|kootu|thoran|curry|dal|gravy|stew|sabzi|biryani|rogan|korma|masala|kofta|kurma|paneer|chicken|fish|mutton|egg|bhindi|gobhi|aloo|baingan|undhiyu|bharta/i)) {
+    return (title.length % 2 === 0) ? 'Lunch' : 'Dinner';
+  }
+  
+  return normalizeMealType(originalCategory);
+}
+
 function normalizeRecipe(recipe, disease, index) {
   const title = recipe.title || recipe.name || `Recipe ${index + 1}`;
-  const mealType = normalizeMealType(recipe.category || recipe.mealType);
+  const mealType = getCategoryByKeywords(title, recipe.category || recipe.mealType);
 
   return {
     id: recipe.id || index + 1,

@@ -2,9 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/layout/Navbar";
 import RecipeCard from "../components/recipe/RecipeCard";
 import allRecipes from "../data/recipeCatalog";
+import { Mic } from "lucide-react";
 
 function Search() {
   const [query, setQuery] = useState("");
+  const [isListening, setIsListening] = useState(false);
   const patientType = localStorage.getItem("patientType") || "Normal";
   const inputRef = useRef(null);
 
@@ -14,6 +16,32 @@ function Search() {
       inputRef.current.focus();
     }
   }, []);
+
+  const handleVoiceSearch = () => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Voice recognition is not supported in this browser. Please try Google Chrome.");
+      return;
+    }
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    setIsListening(true);
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      setQuery(transcript);
+      setIsListening(false);
+    };
+
+    recognition.onerror = () => {
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+  };
 
   // Filter recipes of the current patient type by query
   const patientRecipes = allRecipes.filter(r => r.disease === patientType);
@@ -38,24 +66,37 @@ function Search() {
         <h1 className="text-4xl font-bold mb-6 text-green-700">🔍 Search Recipes</h1>
         
         {/* Search Bar */}
-        <div className="relative mb-8">
+        <div className="relative mb-8 flex items-center">
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search recipes by name..."
+            placeholder={isListening ? "Listening..." : "Search recipes by name..."}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full border-2 border-green-300 rounded-2xl p-4 pl-12 text-lg focus:outline-none focus:border-green-600 transition-colors"
+            className="w-full border-2 border-green-300 rounded-2xl p-4 pl-12 pr-20 text-lg focus:outline-none focus:border-green-600 transition-colors"
           />
           <span className="absolute left-4 top-5 text-gray-400 text-xl">🔍</span>
-          {query && (
+          
+          <div className="absolute right-4 top-4 flex items-center gap-2">
             <button
-              onClick={() => setQuery("")}
-              className="absolute right-4 top-5 text-gray-400 hover:text-gray-600 font-bold"
+              onClick={handleVoiceSearch}
+              type="button"
+              className={`p-2 rounded-full hover:bg-gray-100 transition-colors ${
+                isListening ? "text-red-500 animate-pulse bg-red-50" : "text-gray-500"
+              }`}
+              title="Search by voice"
             >
-              Clear
+              <Mic className="w-5 h-5" />
             </button>
-          )}
+            {query && (
+              <button
+                onClick={() => setQuery("")}
+                className="text-gray-400 hover:text-gray-600 font-bold px-2"
+              >
+                Clear
+              </button>
+            )}
+          </div>
         </div>
 
         {query === "" ? (

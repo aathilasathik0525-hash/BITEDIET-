@@ -9,6 +9,13 @@ import RecipeDetails from "../pages/RecipeDetails";
 import Settings from "../pages/Settings";
 import Search from "../pages/Search";
 import Profile from "../pages/Profile";
+import MealPlanner from "../pages/MealPlanner";
+import NutritionDashboard from "../pages/NutritionDashboard";
+import Splash from "../pages/Splash";
+import SelectHotel from "../pages/SelectHotel";
+import Cart from "../pages/Cart";
+import Payment from "../pages/Payment";
+import OrderConfirmation from "../pages/OrderConfirmation";
 
 if (!sessionStorage.getItem("app_initialized")) {
   localStorage.removeItem("userProfile");
@@ -31,7 +38,7 @@ function ProtectedRoute({ children }) {
   const location = useLocation();
 
   if (!isAuthenticated()) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   if (
@@ -40,6 +47,12 @@ function ProtectedRoute({ children }) {
       location.pathname === "/cookbook" ||
       location.pathname === "/search" ||
       location.pathname === "/profile" ||
+      location.pathname === "/meal-planner" ||
+      location.pathname === "/nutrition-dashboard" ||
+      location.pathname.startsWith("/select-hotel") ||
+      location.pathname === "/cart" ||
+      location.pathname === "/payment" ||
+      location.pathname === "/order-confirmation" ||
       location.pathname === "/settings") &&
     !localStorage.getItem("patientType")
   ) {
@@ -53,7 +66,8 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<PublicRoute><Login /></PublicRoute>} />
+        <Route path="/" element={<Splash />} />
+        <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
 
         <Route path="/patient" element={<ProtectedRoute><PatientSelection /></ProtectedRoute>} />
@@ -63,8 +77,14 @@ function AppRoutes() {
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
         <Route path="/search" element={<ProtectedRoute><Search /></ProtectedRoute>} />
         <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+        <Route path="/meal-planner" element={<ProtectedRoute><MealPlanner /></ProtectedRoute>} />
+        <Route path="/nutrition-dashboard" element={<ProtectedRoute><NutritionDashboard /></ProtectedRoute>} />
+        <Route path="/select-hotel/:recipeId" element={<ProtectedRoute><SelectHotel /></ProtectedRoute>} />
+        <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
+        <Route path="/payment" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
+        <Route path="/order-confirmation" element={<ProtectedRoute><OrderConfirmation /></ProtectedRoute>} />
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   );

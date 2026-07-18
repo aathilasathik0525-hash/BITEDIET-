@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Search, User } from "lucide-react";
+import { Menu, Search, User, ShoppingCart } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,16 @@ function Navbar() {
           <Link to="/search" className="hover:text-green-600">Search</Link>
           <Link to="/cookbook" className="hover:text-green-600">Cookbook</Link>
           <Link to="/profile" className="hover:text-green-600">Profile</Link>
+          <Link to="/meal-planner" className="hover:text-green-600">Planner</Link>
+          <Link to="/nutrition-dashboard" className="hover:text-green-600">Dashboard</Link>
         </div>
 
         <div className="flex gap-4 items-center">
           <Link to="/search">
             <Search className="cursor-pointer text-gray-600 hover:text-green-600 w-6 h-6" />
+          </Link>
+          <Link to="/cart">
+            <ShoppingCart className="cursor-pointer text-gray-600 hover:text-green-600 w-6 h-6" />
           </Link>
           <Link to="/profile">
             <User className="cursor-pointer text-gray-600 hover:text-green-600 w-6 h-6" />
@@ -39,6 +44,8 @@ function Navbar() {
           <Link to="/search" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Search</Link>
           <Link to="/cookbook" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Cookbook</Link>
           <Link to="/profile" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Profile</Link>
+          <Link to="/meal-planner" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Planner</Link>
+          <Link to="/nutrition-dashboard" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Dashboard</Link>
         </div>
       )}
     </nav>

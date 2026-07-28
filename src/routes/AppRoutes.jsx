@@ -16,6 +16,8 @@ import SelectHotel from "../pages/SelectHotel";
 import Cart from "../pages/Cart";
 import Payment from "../pages/Payment";
 import OrderConfirmation from "../pages/OrderConfirmation";
+import MyOrders from "../pages/MyOrders";
+import OrderTracking from "../pages/OrderTracking";
 
 if (!sessionStorage.getItem("app_initialized")) {
   localStorage.removeItem("userProfile");
@@ -53,6 +55,8 @@ function ProtectedRoute({ children }) {
       location.pathname === "/cart" ||
       location.pathname === "/payment" ||
       location.pathname === "/order-confirmation" ||
+      location.pathname === "/my-orders" ||
+      location.pathname.startsWith("/track-order") ||
       location.pathname === "/settings") &&
     !localStorage.getItem("patientType")
   ) {
@@ -83,6 +87,8 @@ function AppRoutes() {
         <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
         <Route path="/payment" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
         <Route path="/order-confirmation" element={<ProtectedRoute><OrderConfirmation /></ProtectedRoute>} />
+        <Route path="/my-orders" element={<ProtectedRoute><MyOrders /></ProtectedRoute>} />
+        <Route path="/track-order/:orderId" element={<ProtectedRoute><OrderTracking /></ProtectedRoute>} />
 
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>

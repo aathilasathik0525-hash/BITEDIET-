@@ -49,17 +49,33 @@ function Payment() {
     // Generate unique Order ID
     const orderId = "BD-" + Math.floor(Math.random() * 900000 + 100000);
 
+    const user = JSON.parse(localStorage.getItem("userProfile")) || {};
+    const userEmail = user.email || "guest@bitediet.com";
+    const now = new Date();
+    const dateTime = now.toLocaleString();
+
     const orderDetails = {
       orderId,
+      userEmail,
       hotelName: cart[0]?.hotelName || "Restaurant",
-      dishes: cart.map(item => ({ name: item.name, quantity: item.quantity, price: item.price })),
+      dishes: cart.map(item => ({
+        name: item.name,
+        image: item.image,
+        quantity: item.quantity,
+        price: item.price
+      })),
       totalAmount,
-      status: "Confirmed"
+      status: "Preparing",
+      dateTime
     };
 
     // Save order details
     localStorage.setItem("lastOrder", JSON.stringify(orderDetails));
     
+    // Save to user persistent orders history
+    const existingOrders = JSON.parse(localStorage.getItem("userOrders") || "[]");
+    localStorage.setItem("userOrders", JSON.stringify([orderDetails, ...existingOrders]));
+
     // Clear the cart
     localStorage.removeItem("cart");
 

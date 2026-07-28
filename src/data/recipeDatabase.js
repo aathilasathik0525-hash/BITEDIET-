@@ -39,7 +39,7 @@ function getCategoryByKeywords(title, originalCategory) {
 
 function normalizeRecipe(recipe, disease, index) {
   const title = recipe.title || recipe.name || `Recipe ${index + 1}`;
-  const mealType = getCategoryByKeywords(title, recipe.category || recipe.mealType);
+  const mealType = normalizeMealType(recipe.category || recipe.mealType);
 
   return {
     id: recipe.id || index + 1,
@@ -67,6 +67,12 @@ function normalizeRecipe(recipe, disease, index) {
     fat: recipe.fat || '—',
     fiber: recipe.fiber || '—',
     cookingTime: recipe.cookingTime || recipe.cookTime || '—',
+    difficulty: recipe.difficulty || (
+      (() => {
+        const mins = parseInt(String(recipe.cookingTime || recipe.cookTime || '').match(/\d+/)?.[0] || '20', 10);
+        return mins <= 20 ? 'Easy' : mins <= 40 ? 'Medium' : 'Hard';
+      })()
+    ),
     servings: recipe.servings || '—',
     healthBenefits: recipe.healthBenefits || '',
     source: recipe.source || 'Trusted food dataset',

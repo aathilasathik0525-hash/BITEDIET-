@@ -18,6 +18,7 @@ function Navbar() {
           <Link to="/search" className="hover:text-green-600">Search</Link>
           <Link to="/cookbook" className="hover:text-green-600">Cookbook</Link>
           <Link to="/profile" className="hover:text-green-600">Profile</Link>
+          <Link to="/my-orders" className="hover:text-green-600">Orders</Link>
           <Link to="/meal-planner" className="hover:text-green-600">Planner</Link>
           <Link to="/nutrition-dashboard" className="hover:text-green-600">Dashboard</Link>
         </div>
@@ -44,6 +45,7 @@ function Navbar() {
           <Link to="/search" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Search</Link>
           <Link to="/cookbook" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Cookbook</Link>
           <Link to="/profile" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Profile</Link>
+          <Link to="/my-orders" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Orders</Link>
           <Link to="/meal-planner" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Planner</Link>
           <Link to="/nutrition-dashboard" onClick={() => setIsOpen(false)} className="hover:text-green-600 py-1">Dashboard</Link>
         </div>

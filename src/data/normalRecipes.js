@@ -66,6 +66,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "7g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "2 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -75,8 +76,8 @@ const normalRecipes = [
     "title": "Fluffy Gujarati Dhokla",
     "name": "Fluffy Gujarati Dhokla",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/normalpeopledishes/053705cd84222df8e5f9f3f6ef2bb3036d1deac8.jpg",
     "ingredients": [
       "1 cup gram flour",
@@ -103,14 +104,15 @@ const normalRecipes = [
       ". 4 5 . . . . , , , , . , , . . 5 10 . . . 10 . 15 20 . 10 . , , , . 3"
     ],
     "calories": "290",
-    "protein": "18g",
+    "protein": "10g",
     "carbohydrates": "36g",
     "carbs": "36g",
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -159,6 +161,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "3 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -202,6 +205,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -211,8 +215,8 @@ const normalRecipes = [
     "title": "Spicy Chicken Tikka Masala",
     "name": "Spicy Chicken Tikka Masala",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/0ac3586d13c69603e8e0652907cbf88699f843ba.jpg",
     "ingredients": [
       "300 grams Chicken - cut into small size pieces",
@@ -279,6 +283,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "50 mins",
+    "difficulty": "Hard",
     "servings": "3 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -349,6 +354,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -403,6 +409,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -437,6 +444,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "1 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -511,6 +519,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -563,6 +572,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Provides complex carbohydrates and soluble fiber to support steady energy release and healthy digestion.",
     "source": "normalpeople_dishes.docx"
@@ -633,6 +643,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -681,6 +692,7 @@ const normalRecipes = [
     "fat": "3g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Refreshing and replenishing beverage loaded with natural electrolytes and clean hydration.",
     "source": "normalpeople_dishes.docx"
@@ -740,6 +752,7 @@ const normalRecipes = [
     "fat": "6g",
     "fiber": "6g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -749,8 +762,8 @@ const normalRecipes = [
     "title": "Vegetable Biryani",
     "name": "Vegetable Biryani",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/normalpeopledishes/2fb0c78039cb57d03d421bc76443d70465d59b14.jpg",
     "ingredients": [
       "1/2 cup green beans - chopped steam",
@@ -814,8 +827,9 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "7g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -865,6 +879,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -874,8 +889,8 @@ const normalRecipes = [
     "title": "Kadhi Pakora",
     "name": "Kadhi Pakora",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/normalpeopledishes/343ca8faba7cbbc9dff6189883628e97125182e1.jpg",
     "ingredients": [
       "1 cup gram flour",
@@ -951,14 +966,15 @@ const normalRecipes = [
       "Serve kadhi pakoda with rice and kachumbar salad for dinner."
     ],
     "calories": "290",
-    "protein": "14g",
+    "protein": "6g",
     "carbohydrates": "40g",
     "carbs": "40g",
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1040,6 +1056,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -1075,6 +1092,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -1110,6 +1128,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -1168,6 +1187,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -1177,8 +1197,8 @@ const normalRecipes = [
     "title": "Nimbu Pani (Shikanji)",
     "name": "Nimbu Pani (Shikanji)",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Breakfast",
+    "mealType": "Breakfast",
     "image": "/images/bp/normalpeopledishes/3f0c6556664a744ddab050c724f66127d56b295f.jpg",
     "ingredients": [
       "1/2 - 4",
@@ -1196,14 +1216,15 @@ const normalRecipes = [
       "3 4 . . 2 3 10 . . . 2 . . , . , , , . 2 3 . ."
     ],
     "calories": "270",
-    "protein": "17g",
-    "carbohydrates": "35g",
-    "carbs": "35g",
-    "fat": "11g",
-    "fiber": "5g",
+    "protein": "13g",
+    "carbohydrates": "30g",
+    "carbs": "30g",
+    "fat": "7g",
+    "fiber": "4g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1211,8 +1232,8 @@ const normalRecipes = [
     "title": "Sweet Lassi",
     "name": "Sweet Lassi",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Drink",
+    "mealType": "Drink",
     "image": "/images/bp/normalpeopledishes/3f2cf3eda034209f1d3bee7d243828f03d4588f8.jpg",
     "ingredients": [
       "1/2 cup Pineapple - cut into small pieces",
@@ -1231,13 +1252,14 @@ const normalRecipes = [
     ],
     "calories": "270",
     "protein": "19g",
-    "carbohydrates": "39g",
-    "carbs": "39g",
-    "fat": "11g",
-    "fiber": "7g",
+    "carbohydrates": "16g",
+    "carbs": "16g",
+    "fat": "2g",
+    "fiber": "3g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Refreshing and replenishing beverage loaded with natural electrolytes and clean hydration.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1305,6 +1327,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
@@ -1348,6 +1371,7 @@ const normalRecipes = [
     "fat": "7g",
     "fiber": "6g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -1357,8 +1381,8 @@ const normalRecipes = [
     "title": "Medu Vada",
     "name": "Medu Vada",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/normalpeopledishes/48b1d6872f4b12a390593c1bac2d69d2b047fcec.jpg",
     "ingredients": [
       "1 cup Sooji (Semolina/ Rava)",
@@ -1395,14 +1419,15 @@ const normalRecipes = [
       "Once done transfer the Rava Vada onto a plate with an oil absorbent paper.Serve the Rava Vada Recipe along with Coconut Chutney and Filter Coffee as a part of the weekend breakfast or as a tea time snack."
     ],
     "calories": "430",
-    "protein": "17g",
+    "protein": "9g",
     "carbohydrates": "37g",
     "carbs": "37g",
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "3 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1473,6 +1498,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -1510,6 +1536,7 @@ const normalRecipes = [
     "fat": "2g",
     "fiber": "3g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "1 servings",
     "healthBenefits": "Refreshing and replenishing beverage loaded with natural electrolytes and clean hydration.",
     "source": "normalpeople_dishes.docx"
@@ -1553,6 +1580,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "4g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -1595,6 +1623,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -1604,8 +1633,8 @@ const normalRecipes = [
     "title": "Indian Masala Chai",
     "name": "Indian Masala Chai",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/546a37c451f826122054fb6a9c50d727f65ab1b9.jpg",
     "ingredients": [
       "2 cups water",
@@ -1630,8 +1659,9 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
-    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1661,6 +1691,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "3 servings",
     "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
@@ -1720,6 +1751,7 @@ const normalRecipes = [
     "fat": "9g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -1755,6 +1787,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -1764,8 +1797,8 @@ const normalRecipes = [
     "title": "Poori Masala",
     "name": "Poori Masala",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/5bb3b7e96db3c54879e295ff93ee08b17c1f5fb8.jpg",
     "ingredients": [
       "6 bitter gourd",
@@ -1792,8 +1825,9 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "6 servings",
-    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -1826,6 +1860,7 @@ const normalRecipes = [
     "fat": "1g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Refreshing and replenishing beverage loaded with natural electrolytes and clean hydration.",
     "source": "normalpeople_dishes.docx"
@@ -1892,6 +1927,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "5g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -1938,6 +1974,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -1947,8 +1984,8 @@ const normalRecipes = [
     "title": "Authentic Chana Masala",
     "name": "Authentic Chana Masala",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/65eb82fee75a12d95e7de3a40146ce3af730c291.jpg",
     "ingredients": [
       "1 Cup Kala Chana (Brown Chickpeas)",
@@ -1990,8 +2027,9 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -2051,6 +2089,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Garlic contains compounds like allicin that support vascular health and provide robust antioxidant defense.",
     "source": "normalpeople_dishes.docx"
@@ -2110,6 +2149,7 @@ const normalRecipes = [
     "fat": "8g",
     "fiber": "4g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -2161,6 +2201,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "12 servings",
     "healthBenefits": "Garlic contains compounds like allicin that support vascular health and provide robust antioxidant defense.",
     "source": "normalpeople_dishes.docx"
@@ -2213,6 +2254,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -2248,6 +2290,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -2303,6 +2346,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -2357,6 +2401,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
@@ -2366,8 +2411,8 @@ const normalRecipes = [
     "title": "Indian Chicken Korma",
     "name": "Indian Chicken Korma",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/7d440d2f1d72134f3d7689f06f8453c237b57c39.jpg",
     "ingredients": [
       "1 Onion - ground to paste",
@@ -2408,6 +2453,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -2475,6 +2521,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "5g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Rich in iron, dietary nitrates, and vitamins to support energy levels, optimal circulation, and muscle recovery.",
     "source": "normalpeople_dishes.docx"
@@ -2527,6 +2574,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -2582,6 +2630,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "7g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Rich in iron, dietary nitrates, and vitamins to support energy levels, optimal circulation, and muscle recovery.",
     "source": "normalpeople_dishes.docx"
@@ -2591,8 +2640,8 @@ const normalRecipes = [
     "title": "Pakora",
     "name": "Pakora",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/normalpeopledishes/84cd834f3d982756b07ff2b5da6f69fada669daa.jpg",
     "ingredients": [
       "1 cup Broken Wheat (Dalia/ Godumai Rava)",
@@ -2648,14 +2697,15 @@ const normalRecipes = [
       "You can also serve a hot cup of masala tea with it."
     ],
     "calories": "370",
-    "protein": "14g",
+    "protein": "6g",
     "carbohydrates": "41g",
     "carbs": "41g",
     "fat": "11g",
     "fiber": "5g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -2689,6 +2739,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -2750,6 +2801,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "6g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -2792,6 +2844,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "7g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "3 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -2859,6 +2912,7 @@ const normalRecipes = [
     "fat": "6g",
     "fiber": "6g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "40 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -2927,6 +2981,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "7g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -2982,6 +3037,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "6g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "7 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -2991,8 +3047,8 @@ const normalRecipes = [
     "title": "South Indian Lemon Rice",
     "name": "South Indian Lemon Rice",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/normalpeopledishes/9ee2bd7119bafadbbc2b287c46720db931e72e7d.jpg",
     "ingredients": [
       "1 cup rice",
@@ -3036,8 +3092,9 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -3087,6 +3144,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "3 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -3131,6 +3189,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "6g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -3166,6 +3225,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -3222,6 +3282,7 @@ const normalRecipes = [
     "fat": "8g",
     "fiber": "4g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -3256,6 +3317,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "1 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -3313,6 +3375,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3381,6 +3444,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "6g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3427,6 +3491,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3436,8 +3501,8 @@ const normalRecipes = [
     "title": "Rajma (Kidney Beans Curry)",
     "name": "Rajma (Kidney Beans Curry)",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/bc9275d7dce4e39f5521b2cafb63c34a3b1ee4bc.jpg",
     "ingredients": [
       "500",
@@ -3470,8 +3535,9 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -3526,6 +3592,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "40 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
@@ -3582,6 +3649,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "7g",
     "cookingTime": "120 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3654,6 +3722,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3689,6 +3758,7 @@ const normalRecipes = [
     "fat": "8g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -3698,8 +3768,8 @@ const normalRecipes = [
     "title": "Punjabi Mutton Curry",
     "name": "Punjabi Mutton Curry",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/c6d2256206b78abd4b53dbab01041b2f0e29a330.jpg",
     "ingredients": [
       "350 grams Mutton",
@@ -3748,6 +3818,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -3807,6 +3878,7 @@ const normalRecipes = [
     "fat": "8g",
     "fiber": "4g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Provides complex carbohydrates and soluble fiber to support steady energy release and healthy digestion.",
     "source": "normalpeople_dishes.docx"
@@ -3846,6 +3918,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "4g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
     "source": "normalpeople_dishes.docx"
@@ -3920,6 +3993,7 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "70 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -3929,8 +4003,8 @@ const normalRecipes = [
     "title": "Roti (Chapati)",
     "name": "Roti (Chapati)",
     "disease": "Normal",
-    "category": "Breakfast",
-    "mealType": "Breakfast",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/ce093c4d71d2d1026d729f591650b7958a55db9d.jpg",
     "ingredients": [
       "2 cups Whole Wheat Flour",
@@ -3960,14 +4034,15 @@ const normalRecipes = [
       "You can also pack it for your lunch box."
     ],
     "calories": "330",
-    "protein": "12g",
-    "carbohydrates": "30g",
-    "carbs": "30g",
-    "fat": "10g",
-    "fiber": "6g",
+    "protein": "16g",
+    "carbohydrates": "35g",
+    "carbs": "35g",
+    "fat": "14g",
+    "fiber": "7g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -3975,8 +4050,8 @@ const normalRecipes = [
     "title": "Kadai Paneer Gravy",
     "name": "Kadai Paneer Gravy",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/cfb89892b86ca82e243567c64bfa9e667a0647c9.jpg",
     "ingredients": [
       "3 liter Milk",
@@ -4013,6 +4088,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "200 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -4022,8 +4098,8 @@ const normalRecipes = [
     "title": "Mutton Keema Curry",
     "name": "Mutton Keema Curry",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/d1066b1ed5cc44acd77ff039151f211f36b85106.jpg",
     "ingredients": [
       "2 cup Mutton - minced",
@@ -4066,6 +4142,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -4143,6 +4220,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -4206,6 +4284,7 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "20 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -4265,6 +4344,7 @@ const normalRecipes = [
     "fat": "4g",
     "fiber": "1g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Refreshing and replenishing beverage loaded with natural electrolytes and clean hydration.",
     "source": "normalpeople_dishes.docx"
@@ -4274,8 +4354,8 @@ const normalRecipes = [
     "title": "South Indian Vegetable Kurma",
     "name": "South Indian Vegetable Kurma",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/d64ac62853ae59b40ea9611b5dfccaa4b495e3a0.jpg",
     "ingredients": [
       "2 cups Mixed vegetables - use carrots",
@@ -4335,8 +4415,9 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "6g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
-    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
+    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
@@ -4402,6 +4483,7 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "5g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -4473,6 +4555,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
@@ -4482,8 +4565,8 @@ const normalRecipes = [
     "title": "Shahi Paneer Curry",
     "name": "Shahi Paneer Curry",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/e61e456347c39d5f236c8a1fbe1ece0a65fa960b.jpg",
     "ingredients": [
       "1 -",
@@ -4513,6 +4596,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -4599,6 +4683,7 @@ const normalRecipes = [
     "fat": "12g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "3 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -4669,6 +4754,7 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "5g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
@@ -4707,69 +4793,13 @@ const normalRecipes = [
     "fat": "13g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
     "id": 288,
-    "title": "Indian Chicken Biryani 2",
-    "name": "Indian Chicken Biryani 2",
-    "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
-    "image": "/images/bp/normalpeopledishes/eb03bff682462908c12a8c86996ea18a5936c7da.jpg",
-    "ingredients": [
-      "500 grams Tapioca root - skin peeled and chopped into small cubes",
-      "250 grams Chicken - minced",
-      "1 Onion - sliced",
-      "5 cloves Garlic - chopped",
-      "1 inch Ginger - chopped",
-      "1 sprig Curry leaves",
-      "1 Green Chilli - sliced",
-      "1 teaspoon Turmeric powder (Haldi)",
-      "1 teaspoon Red Chilli powder",
-      "2 teaspoons Garam masala powder",
-      "1 teaspoon Black pepper powder",
-      "3 tablespoons Fresh coconut - grated",
-      "Salt - to taste",
-      "Coconut Oil - for cooking"
-    ],
-    "procedure": [
-      "To begin making the Chicken Kappa Biryani Recipe, we will first pressure cook the tapioca in pressure cooker with salt to 6 whistles.The tapioca must be boiled enough so that it is easy for you to mash it.",
-      "Once done allow the pressure cooker to release the pressure naturally.Drain the water, transfer the tapioca in a bowl and mash it well, leaving it a bit chunky as well.",
-      "Set aside.",
-      "Heat a kadai with coconut oil, add curry leaves and allow it splutter.",
-      "Add ginger, garlic and saute for a few minutes.",
-      "Add sliced onions and saute till they turn translucent.",
-      "Now add all the spice powders- turmeric powder, red chilli powder, garam masala powder and pepper powder, give it a good stir.Add minced chicken and cook until the chicken is done.",
-      "This will take about 18-20 minutes.",
-      "Add the cooked and mashed tapioca, mix them well.By using a masher try to mash the tapioca a little more and also keep few chunks as well for a good texture.Serve the Chicken Kappa Biryani Recipe along with potato theeyal or Tomato Onion Cucumber Raita to enjoy your Sunday lunch."
-    ],
-    "instructions": [
-      "To begin making the Chicken Kappa Biryani Recipe, we will first pressure cook the tapioca in pressure cooker with salt to 6 whistles.The tapioca must be boiled enough so that it is easy for you to mash it.",
-      "Once done allow the pressure cooker to release the pressure naturally.Drain the water, transfer the tapioca in a bowl and mash it well, leaving it a bit chunky as well.",
-      "Set aside.",
-      "Heat a kadai with coconut oil, add curry leaves and allow it splutter.",
-      "Add ginger, garlic and saute for a few minutes.",
-      "Add sliced onions and saute till they turn translucent.",
-      "Now add all the spice powders- turmeric powder, red chilli powder, garam masala powder and pepper powder, give it a good stir.Add minced chicken and cook until the chicken is done.",
-      "This will take about 18-20 minutes.",
-      "Add the cooked and mashed tapioca, mix them well.By using a masher try to mash the tapioca a little more and also keep few chunks as well for a good texture.Serve the Chicken Kappa Biryani Recipe along with potato theeyal or Tomato Onion Cucumber Raita to enjoy your Sunday lunch."
-    ],
-    "calories": "330",
-    "protein": "14g",
-    "carbohydrates": "38g",
-    "carbs": "38g",
-    "fat": "14g",
-    "fiber": "5g",
-    "cookingTime": "45 mins",
-    "servings": "4 servings",
-    "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 289,
     "title": "Kaju Katli",
     "name": "Kaju Katli",
     "disease": "Normal",
@@ -4817,12 +4847,13 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "6g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "10 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 290,
+    "id": 289,
     "title": "Khasta Kachori",
     "name": "Khasta Kachori",
     "disease": "Normal",
@@ -4885,12 +4916,13 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "7g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 291,
+    "id": 290,
     "title": "Sambar",
     "name": "Sambar",
     "disease": "Normal",
@@ -4947,17 +4979,18 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "5g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "3 servings",
     "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 292,
+    "id": 291,
     "title": "Paneer Butter Masala",
     "name": "Paneer Butter Masala",
     "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/normalpeopledishes/f516385891f1bfc2e562de10c8c8e2f0e9ea5058.jpg",
     "ingredients": [
       "200 gram Paneer (Homemade Cottage Cheese) - cut into cubes",
@@ -5011,12 +5044,13 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 293,
+    "id": 292,
     "title": "Butter Naan",
     "name": "Butter Naan",
     "disease": "Normal",
@@ -5050,17 +5084,18 @@ const normalRecipes = [
     "fat": "11g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "10 servings",
     "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 294,
+    "id": 293,
     "title": "Veg Pulao",
     "name": "Veg Pulao",
     "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/normalpeopledishes/fb3f3bf2d96214edf1dcf33dcdf8561c28e29326.jpg",
     "ingredients": [
       "2 -",
@@ -5087,12 +5122,13 @@ const normalRecipes = [
     "fat": "14g",
     "fiber": "5g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
+    "healthBenefits": "Wholesome, nutritionally complete meal that maintains metabolic equilibrium and keeps you energized.",
     "source": "normalpeople_dishes.docx"
   },
   {
-    "id": 295,
+    "id": 294,
     "title": "South Indian Masala Dosa",
     "name": "South Indian Masala Dosa",
     "disease": "Normal",
@@ -5180,292 +5216,9 @@ const normalRecipes = [
     "fat": "10g",
     "fiber": "4g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Balanced breakfast providing stable carbohydrates and vital micronutrients to kickstart metabolism and focus.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 296,
-    "title": "Mumbai Street Style Pav Bhaji Specialty",
-    "name": "Mumbai Street Style Pav Bhaji Specialty",
-    "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
-    "image": "/images/bp/normalpeopledishes/025f3e9e1fb7b2506ca8270ac78ed0a932be8bda.jpg",
-    "ingredients": [
-      "6 Raw Banana",
-      "2 Tomatoes - finely chopped",
-      "1 Onion - finely chopped",
-      "1 Green Bell Pepper (Capsicum) - finely chopped",
-      "2 Green Chillies - finely chopped",
-      "1/2 cup Green peas (Matar) - steamed",
-      "1 teaspoon Red Chilli powder",
-      "1/2 teaspoon Turmeric powder (Haldi)",
-      "1/2 teaspoon Coriander Powder (Dhania)",
-      "2 tablespoon Pav bhaji masala",
-      "Salt - to taste",
-      "1 tablespoon Cumin seeds (Jeera)",
-      "Sunflower Oil - as required",
-      "Water - as required",
-      "1 teaspoon Lemon juice",
-      "1 Onion - finely chopped",
-      "1/2 cup Mozzarella cheese - grated",
-      "2 sprig Coriander (Dhania) Leaves - for garnish",
-      "1 Pizza base - or whole wheat pizza",
-      "50 grams Butter"
-    ],
-    "procedure": [
-      "To begin making the Pav Bhaji Pizza recipe, wash and boil the raw banana.",
-      "Add the raw bananas in a pressure cooker with required water.Cook for 2 to 3 whistles.",
-      "Let the pressure release naturally.",
-      "Once cooked, peel the skin and grate it.",
-      "Keep it aside.Heat some oil in a heavy bottomed pan.",
-      "Add cumin seeds and saute for about 10 seconds.Next, add onions and cook till they turn soft and translucent.",
-      "Add green chillies, capsicum, tomatoes and cook them for about 10 to 12 minutes or till the capsicum becomes soft.Next, add steamed peas, red chilli powder, turmeric powder, coriander powder, pav bhaji masala, salt as required and mix well.",
-      "Let it cook for about 2 minutes.Once done add the grated raw banana.",
-      "With the help of potato masher, mash the vegetables and cook for another 10 minutes.Once the vegetables are cooked turn of the heat and add lemon juice and allow the Pav Bhaji masala to cool.For the Pizza, take a pizza base and apply butter on it.",
-      "Toast the pizza base in the skillet until crisp and browned.Once the pizza based is crisped, evenly spread the prepared bhaji over the pizza.",
-      "Sprinkle the finely chopped onions and grated mozzarella cheese.Keep it in the preheated oven at 180°C for 12-15 minutes until the cheese melts and you see it bubbling.",
-      "Remove the Pav Bhaji Pizza from the oven and serve.Serve the Pav Bhaji Pizza along with a Indian Style Masala Macaroni for a weekend dinner.",
-      "You can also serve No Churn Strawberry Ice cream after your delicious meal."
-    ],
-    "instructions": [
-      "To begin making the Pav Bhaji Pizza recipe, wash and boil the raw banana.",
-      "Add the raw bananas in a pressure cooker with required water.Cook for 2 to 3 whistles.",
-      "Let the pressure release naturally.",
-      "Once cooked, peel the skin and grate it.",
-      "Keep it aside.Heat some oil in a heavy bottomed pan.",
-      "Add cumin seeds and saute for about 10 seconds.Next, add onions and cook till they turn soft and translucent.",
-      "Add green chillies, capsicum, tomatoes and cook them for about 10 to 12 minutes or till the capsicum becomes soft.Next, add steamed peas, red chilli powder, turmeric powder, coriander powder, pav bhaji masala, salt as required and mix well.",
-      "Let it cook for about 2 minutes.Once done add the grated raw banana.",
-      "With the help of potato masher, mash the vegetables and cook for another 10 minutes.Once the vegetables are cooked turn of the heat and add lemon juice and allow the Pav Bhaji masala to cool.For the Pizza, take a pizza base and apply butter on it.",
-      "Toast the pizza base in the skillet until crisp and browned.Once the pizza based is crisped, evenly spread the prepared bhaji over the pizza.",
-      "Sprinkle the finely chopped onions and grated mozzarella cheese.Keep it in the preheated oven at 180°C for 12-15 minutes until the cheese melts and you see it bubbling.",
-      "Remove the Pav Bhaji Pizza from the oven and serve.Serve the Pav Bhaji Pizza along with a Indian Style Masala Macaroni for a weekend dinner.",
-      "You can also serve No Churn Strawberry Ice cream after your delicious meal."
-    ],
-    "calories": "430",
-    "protein": "17g",
-    "carbohydrates": "39g",
-    "carbs": "39g",
-    "fat": "14g",
-    "fiber": "5g",
-    "cookingTime": "45 mins",
-    "servings": "2 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 297,
-    "title": "Fluffy Gujarati Dhokla Specialty",
-    "name": "Fluffy Gujarati Dhokla Specialty",
-    "disease": "Normal",
-    "category": "Dinner",
-    "mealType": "Dinner",
-    "image": "/images/bp/normalpeopledishes/053705cd84222df8e5f9f3f6ef2bb3036d1deac8.jpg",
-    "ingredients": [
-      "1 cup gram flour",
-      "300 grams spinach",
-      "1/4 cup Hung curd - whisk",
-      "1 inch ginger",
-      "3 green chillies",
-      "2 tbsp oil",
-      "1 tbsp lemon juice",
-      "1 tbsp sugar - optional",
-      "salt - as per taste",
-      "1 tsp ino fruit salt",
-      "2 tsp oil",
-      "1 tsp rye",
-      "2 tsp sesame seeds (white)",
-      "5 kadhi leaves",
-      "1/4 tsp asafoetida",
-      "3 tbsp water"
-    ],
-    "procedure": [
-      ". 4 5 . . . . , , , , . , , . . 5 10 . . . 10 . 15 20 . 10 . , , , . 3"
-    ],
-    "instructions": [
-      ". 4 5 . . . . , , , , . , , . . 5 10 . . . 10 . 15 20 . 10 . , , , . 3"
-    ],
-    "calories": "290",
-    "protein": "16g",
-    "carbohydrates": "39g",
-    "carbs": "39g",
-    "fat": "12g",
-    "fiber": "7g",
-    "cookingTime": "30 mins",
-    "servings": "4 servings",
-    "healthBenefits": "Light and easy-to-digest dinner option designed to support metabolic rest and clean cellular repair.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 298,
-    "title": "Crispy Jalebi Specialty",
-    "name": "Crispy Jalebi Specialty",
-    "disease": "Normal",
-    "category": "Snack",
-    "mealType": "Snack",
-    "image": "/images/bp/normalpeopledishes/067a4ae26dfc60def5a5723deab55d2fe6b919f9.jpg",
-    "ingredients": [
-      "2 Apples - (adjust)",
-      "1 cup All Purpose Flour (Maida)",
-      "Sunflower Oil - to deep fry",
-      "4 Cardamom (Elaichi) Pods/Seeds",
-      "2 tablespoons Curd (Dahi / Yogurt)",
-      "Pistachios - to garnish",
-      "Canned Cherries - to garnsh",
-      "1 tablespoon All Purpose Flour (Maida)",
-      "1 teaspoon Cinnamon Powder (Dalchini)",
-      "300 grams Sugar",
-      "1 cup Water",
-      "Saffron strands - a few",
-      "Rose water - few drops"
-    ],
-    "procedure": [
-      "To begin making the Apple Jalebi Recipe, in a mixing bowl, add all purpose flour, yogurt and add some water and mix well to make a thick batter.",
-      "Let it rest for 5 to 6 hours.Make sugar syrup by adding sugar, water, saffron, rose water and green cardamom in a saucepan.",
-      "Make it little thick (2 strings consistency).Take a plate and add 1 tablespoon all purpose flour, 1 tablespoon cinnamon powder and mix well.Peel the skin of an apple, scoop out the seeds, and cut it into roundels.",
-      "Coat the apple slices in the flour and cinnamon powder.Next dip the apple slices in the batter and deep fry in the hot oil or ghee over a low flame till they are light golden.",
-      "Do not dip the fried apples in the sugar syrup for too long,otherwise it would turn soggy.",
-      "Soak them in syrup for 2 to 3 minutes.Take them out from the syrup and garnish with chopped cherries and pistachios.Serve Apple Jalebi Recipe as a party dessert after a diwali meal of Rajma Galouti Kebab Recipe, Paneer Butter Masala Recipe, Puri Recipe, Jeera Rice (Pulao) Recipe and any Raita of your choice."
-    ],
-    "instructions": [
-      "To begin making the Apple Jalebi Recipe, in a mixing bowl, add all purpose flour, yogurt and add some water and mix well to make a thick batter.",
-      "Let it rest for 5 to 6 hours.Make sugar syrup by adding sugar, water, saffron, rose water and green cardamom in a saucepan.",
-      "Make it little thick (2 strings consistency).Take a plate and add 1 tablespoon all purpose flour, 1 tablespoon cinnamon powder and mix well.Peel the skin of an apple, scoop out the seeds, and cut it into roundels.",
-      "Coat the apple slices in the flour and cinnamon powder.Next dip the apple slices in the batter and deep fry in the hot oil or ghee over a low flame till they are light golden.",
-      "Do not dip the fried apples in the sugar syrup for too long,otherwise it would turn soggy.",
-      "Soak them in syrup for 2 to 3 minutes.Take them out from the syrup and garnish with chopped cherries and pistachios.Serve Apple Jalebi Recipe as a party dessert after a diwali meal of Rajma Galouti Kebab Recipe, Paneer Butter Masala Recipe, Puri Recipe, Jeera Rice (Pulao) Recipe and any Raita of your choice."
-    ],
-    "calories": "310",
-    "protein": "11g",
-    "carbohydrates": "37g",
-    "carbs": "37g",
-    "fat": "13g",
-    "fiber": "7g",
-    "cookingTime": "30 mins",
-    "servings": "3 servings",
-    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 299,
-    "title": "Gajar Halwa (Carrot Halwa) Specialty",
-    "name": "Gajar Halwa (Carrot Halwa) Specialty",
-    "disease": "Normal",
-    "category": "Snack",
-    "mealType": "Snack",
-    "image": "/images/bp/normalpeopledishes/06c97dc3441a37b59d14b8a069b03b9d0e1c1e74.jpg",
-    "ingredients": [
-      "4 cups Papaya - peeled and grated",
-      "1 cup Carrot (Gajjar) - grated",
-      "1/2 cup Sugar",
-      "3/4 cup Milk",
-      "1/2 teaspoon Cardamom Powder (Elaichi)",
-      "2 Saffron strands",
-      "2 tablespoons Badam (Almond) - sliced",
-      "1/4 cup Ghee"
-    ],
-    "procedure": [
-      "To begin making the Papaya and Carrot Halwa Recipe, first get the ingredients ready by grating the papaya and carrots.In a heavy bottomed pan add the ghee, the grated papaya and carrots.",
-      "Saute for a few minutes until you get a good aroma.",
-      "Stir in the milk, sugar and simmer with the papaya carrot halwa mixture until all the milk condenses to form a thick halwa.You will notice the halwa would become thick and become sticky leaving the sides of the pan.",
-      "The milk and water content should be completely evaporated and the Papaya Carrot Halwa will look glossy.At this stage add a tablespoon of ghee and mix well and finally stir in the cardamom powder, saffron and sliced almonds to the halwa.",
-      "Turn off the heat and serve.Serve the Papaya & Carrot Halwa along with vanillas ice cream as a Dessert for parties or as a special sweet for the festivals like Diwali, Navratri, Raksha Bandhan and Holi."
-    ],
-    "instructions": [
-      "To begin making the Papaya and Carrot Halwa Recipe, first get the ingredients ready by grating the papaya and carrots.In a heavy bottomed pan add the ghee, the grated papaya and carrots.",
-      "Saute for a few minutes until you get a good aroma.",
-      "Stir in the milk, sugar and simmer with the papaya carrot halwa mixture until all the milk condenses to form a thick halwa.You will notice the halwa would become thick and become sticky leaving the sides of the pan.",
-      "The milk and water content should be completely evaporated and the Papaya Carrot Halwa will look glossy.At this stage add a tablespoon of ghee and mix well and finally stir in the cardamom powder, saffron and sliced almonds to the halwa.",
-      "Turn off the heat and serve.Serve the Papaya & Carrot Halwa along with vanillas ice cream as a Dessert for parties or as a special sweet for the festivals like Diwali, Navratri, Raksha Bandhan and Holi."
-    ],
-    "calories": "370",
-    "protein": "6g",
-    "carbohydrates": "36g",
-    "carbs": "36g",
-    "fat": "11g",
-    "fiber": "5g",
-    "cookingTime": "40 mins",
-    "servings": "4 servings",
-    "healthBenefits": "Nutritious snack offering quick energy and satiety, perfect for refueling between main meals.",
-    "source": "normalpeople_dishes.docx"
-  },
-  {
-    "id": 300,
-    "title": "Spicy Chicken Tikka Masala Specialty",
-    "name": "Spicy Chicken Tikka Masala Specialty",
-    "disease": "Normal",
-    "category": "Lunch",
-    "mealType": "Lunch",
-    "image": "/images/bp/normalpeopledishes/0ac3586d13c69603e8e0652907cbf88699f843ba.jpg",
-    "ingredients": [
-      "300 grams Chicken - cut into small size pieces",
-      "1/2 cup Curd (Dahi / Yogurt)",
-      "1 teaspoon Cumin powder (Jeera)",
-      "1-1/2 teaspoon Coriander Powder (Dhania)",
-      "1/2 teaspoon Turmeric powder (Haldi)",
-      "1 inch Ginger - finely chopped",
-      "6 cloves Garlic - finely chopped",
-      "1/2 teaspoon Red Chilli powder",
-      "1 tablespoon Kasuri Methi (Dried Fenugreek Leaves)",
-      "Salt - as required",
-      "1 Onion",
-      "1 Tomato",
-      "5 Cashew nuts",
-      "1 teaspoon Cumin powder (Jeera)",
-      "1 teaspoon Coriander Powder (Dhania)",
-      "1 Cloves (Laung)",
-      "1/4 teaspoon Cinnamon Powder (Dalchini)",
-      "1/4 teaspoon Cardamom Powder (Elaichi)",
-      "1/2 cup Fresh cream",
-      "1 tablespoon Butter (unsalted)",
-      "Sunflower Oil - as required",
-      "Salt - to taste"
-    ],
-    "procedure": [
-      "To begin making the Chicken Tikka Masala, thoroughly clean and wash the chicken pieces.",
-      "To marinate the Chicken for the Chicken Tikka Masala, in a mixing bowl, combine yogurt, cumin powder, coriander powder, turmeric powder, ginger, garlic, chili powder, kasuri methi and salt along with the chicken.",
-      "Allow the chicken to marinate for a minimum of 30 minutes.",
-      "Once the chicken is marinated, in a pan, add a teaspoon of oil and cook marinated chicken pieces until they are cooked well for about 8 minutes.",
-      "The chicken pieces should be juicy and tender.Cooking chicken for an extended time will make them hard and rubbery.",
-      "Do not add water.The next step is to make the tikka masala gravy.",
-      "Heat a teaspoon of oil over medium heat.",
-      "Add onion and cook until they become translucent.",
-      "Add tomatoes and cook them for about two minutes.",
-      "Add cashews and toss them for a minute.",
-      "Allow the onion tomato masala to cool down.Once it cools down, grind onion, tomato, and cashew into a fine paste.Heat a kadai/wok with a tablespoon of butter.",
-      "Once the butter melts, add cloves, cinnamon powder, and cardamom powder and saute until aroma comes out.Add cumin powder and coriander powder and combine them well.Add the onion-tomato-cashew puree to the pan, combine them well and saute for few minutes.Crush kasuri methi with your hand and add to the tikka masala gravy.",
-      "Add the marinated chicken pieces, required amount of salt and cream.",
-      "Toss the chicken tikka masala well so that they are combined well.Simmer the chicken tikka masala for about 5 minutes.",
-      "If the tikka masala is of thicker consistency, adjust addition of water according to your requirements.Switch off heat and garnish the chicken tikka masala with coriander leaves and it is ready to be served.Serve Chicken Tikka Masala with Dhaba Style Spicy Ghee Rice Recipe Made From Whole Spices or Butter Garlic Naan Recipe (Garlic Flavoured Flat Bread) and Pickled onions for a complete Weekend dinner."
-    ],
-    "instructions": [
-      "To begin making the Chicken Tikka Masala, thoroughly clean and wash the chicken pieces.",
-      "To marinate the Chicken for the Chicken Tikka Masala, in a mixing bowl, combine yogurt, cumin powder, coriander powder, turmeric powder, ginger, garlic, chili powder, kasuri methi and salt along with the chicken.",
-      "Allow the chicken to marinate for a minimum of 30 minutes.",
-      "Once the chicken is marinated, in a pan, add a teaspoon of oil and cook marinated chicken pieces until they are cooked well for about 8 minutes.",
-      "The chicken pieces should be juicy and tender.Cooking chicken for an extended time will make them hard and rubbery.",
-      "Do not add water.The next step is to make the tikka masala gravy.",
-      "Heat a teaspoon of oil over medium heat.",
-      "Add onion and cook until they become translucent.",
-      "Add tomatoes and cook them for about two minutes.",
-      "Add cashews and toss them for a minute.",
-      "Allow the onion tomato masala to cool down.Once it cools down, grind onion, tomato, and cashew into a fine paste.Heat a kadai/wok with a tablespoon of butter.",
-      "Once the butter melts, add cloves, cinnamon powder, and cardamom powder and saute until aroma comes out.Add cumin powder and coriander powder and combine them well.Add the onion-tomato-cashew puree to the pan, combine them well and saute for few minutes.Crush kasuri methi with your hand and add to the tikka masala gravy.",
-      "Add the marinated chicken pieces, required amount of salt and cream.",
-      "Toss the chicken tikka masala well so that they are combined well.Simmer the chicken tikka masala for about 5 minutes.",
-      "If the tikka masala is of thicker consistency, adjust addition of water according to your requirements.Switch off heat and garnish the chicken tikka masala with coriander leaves and it is ready to be served.Serve Chicken Tikka Masala with Dhaba Style Spicy Ghee Rice Recipe Made From Whole Spices or Butter Garlic Naan Recipe (Garlic Flavoured Flat Bread) and Pickled onions for a complete Weekend dinner."
-    ],
-    "calories": "370",
-    "protein": "14g",
-    "carbohydrates": "36g",
-    "carbs": "36g",
-    "fat": "11g",
-    "fiber": "5g",
-    "cookingTime": "50 mins",
-    "servings": "3 servings",
-    "healthBenefits": "Excellent source of high-quality complete protein, essential for muscle repair, structural health, and lasting satiety.",
     "source": "normalpeople_dishes.docx"
   }
 ];

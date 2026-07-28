@@ -102,6 +102,7 @@ function Profile() {
 
   const menuOptions = [
     { name: "My Profile", icon: "👤" },
+    { name: "My Orders", icon: "📋", action: () => navigate("/my-orders") },
     { name: "Cookbook", icon: "📖", action: () => navigate("/cookbook") },
     { name: "Meal Reminder", icon: "⏰" },
     { name: "Settings", icon: "⚙️", action: () => navigate("/settings") },

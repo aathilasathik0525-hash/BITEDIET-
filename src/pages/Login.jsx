@@ -9,26 +9,45 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
+    const trimmedInput = String(email || "").trim();
+    const trimmedPassword = String(password || "");
+
     try {
       try {
-        await loginUser(email, password);
+        await loginUser(trimmedInput, trimmedPassword);
       } catch (firebaseError) {
         console.warn("Firebase login unavailable, using saved user fallback.", firebaseError);
       }
 
       const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
       const matchedUser = registeredUsers.find(
-        (user) => user.email === email && user.password === password
+        (user) => 
+          (String(user.email || "").toLowerCase() === trimmedInput.toLowerCase() || 
+           String(user.username || "").toLowerCase() === trimmedInput.toLowerCase()) && 
+          String(user.password || "") === trimmedPassword
       );
 
       if (!matchedUser) {
-        alert("No matching account found. Please register first.");
+        alert("Invalid username/email or password.");
         return;
       }
 
       localStorage.setItem("userProfile", JSON.stringify(matchedUser));
+      
+      // Restore patientType if it exists in the saved user profile
+      if (matchedUser.patientType) {
+        localStorage.setItem("patientType", matchedUser.patientType);
+      } else {
+        localStorage.removeItem("patientType");
+      }
+
       alert("Login Successful ✅");
-      navigate("/patient");
+      
+      if (matchedUser.patientType) {
+        navigate("/home");
+      } else {
+        navigate("/patient");
+      }
     } catch (error) {
       alert(error.message || "Login failed.");
     }

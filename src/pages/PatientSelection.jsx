@@ -5,7 +5,28 @@ function PatientSelection() {
 
   const choose = (type) => {
     localStorage.setItem("patientType", type);
-   navigate("/home");
+    
+    try {
+      const userProfile = JSON.parse(localStorage.getItem("userProfile") || "{}");
+      userProfile.patientType = type;
+      localStorage.setItem("userProfile", JSON.stringify(userProfile));
+
+      const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
+      const updatedUsers = registeredUsers.map(user => {
+        if (
+          (user.username && user.username === userProfile.username) || 
+          (user.email && user.email === userProfile.email)
+        ) {
+          return { ...user, patientType: type };
+        }
+        return user;
+      });
+      localStorage.setItem("registeredUsers", JSON.stringify(updatedUsers));
+    } catch (e) {
+      console.error("Failed to save patient selection permanently", e);
+    }
+
+    navigate("/home");
   };
 
   return (

@@ -147,17 +147,17 @@ function parseInstructions(instrStr) {
 
 function getNormalCategory(recipeName) {
   const lower = recipeName.toLowerCase();
-  if (lower.match(/smoothie|tea|coffee|juice|shake|milk|drink|beverage|shorba|soup|rasam|thandai/i)) {
+  if (lower.match(/smoothie|tea|coffee|juice|shake|milk|drink|beverage|shorba|soup|rasam|thandai|lassi/i)) {
     return 'Drink';
   }
-  if (lower.match(/idli|dosa|chilla|upma|poha|breakfast|paratha|puri|toast|porridge|oats|pancake|roti|appam|puttu/i)) {
+  if (lower.match(/idli|dosa|chilla|upma|poha|breakfast|paratha|puri|toast|porridge|oats|pancake|kanji|appam|puttu|pongal|thalipeeth/i)) {
     return 'Breakfast';
   }
-  if (lower.match(/chutney|pachadi|ladoo|kheer|halwa|bite|fritter|tikki|chaat|makhana|snack|appetizer|custard|jalebi|barfi|samosa|rasgulla|jamun|kachori/i)) {
+  if (lower.match(/chutney|pachadi|ladoo|kheer|halwa|bite|fritter|tikki|chaat|makhana|snack|appetizer|custard|jalebi|barfi|samosa|rasgulla|jamun|kachori|dhokla|vada|pakora|bhel|kebab|skewers|modak|brownie/i)) {
     return 'Snack';
   }
-  if (lower.match(/pulao|rice|sambar|kootu|thoran|curry|dal|gravy|stew|sabzi|biryani|rogan|korma|masala|kofta|kurma/i)) {
-    return (recipeName.length % 2 === 0) ? 'Lunch' : 'Dinner';
+  if (lower.match(/pulao|rice|biryani|sambar|khichdi|thali/i)) {
+    return 'Lunch';
   }
   return 'Dinner';
 }
@@ -246,13 +246,13 @@ function addNormalRecipe(fileName, title) {
   
   const category = getNormalCategory(title);
   
-  let uniqueTitle = title;
-  let suffix = 2;
-  while (usedNames.has(uniqueTitle.toLowerCase().trim())) {
-    uniqueTitle = `${title} ${suffix}`;
-    suffix++;
+  const lowerTitle = title.toLowerCase().trim();
+  if (usedNames.has(lowerTitle)) {
+    console.log(`Skipping duplicate title in Normal dataset: "${title}"`);
+    return;
   }
-  usedNames.add(uniqueTitle.toLowerCase().trim());
+  usedNames.add(lowerTitle);
+  let uniqueTitle = title;
   
   const nameLength = uniqueTitle.length;
   const baseCalories = 250 + (nameLength % 10) * 20;
@@ -266,6 +266,9 @@ function addNormalRecipe(fileName, title) {
   const fat = `${Math.max(1, fatBase + (nameLength % 5))}g`;
   const fiber = `${Math.max(1, fiberBase + (nameLength % 3))}g`;
   
+  const cookMins = parseInt(String(cookTime || '').match(/\d+/)?.[0] || '20', 10);
+  const difficulty = cookMins <= 20 ? 'Easy' : cookMins <= 40 ? 'Medium' : 'Hard';
+
   const healthBenefits = getNormalHealthBenefits(uniqueTitle, category);
   const imagePath = `/images/bp/normalpeopledishes/${fileName}`;
   
@@ -287,6 +290,7 @@ function addNormalRecipe(fileName, title) {
     fat: fat,
     fiber: fiber,
     cookingTime: cookTime,
+    difficulty: difficulty,
     servings: servings,
     healthBenefits: healthBenefits,
     source: 'normalpeople_dishes.docx'
@@ -296,13 +300,6 @@ function addNormalRecipe(fileName, title) {
 // 1. Add the 95 images
 Object.entries(normalImageTitles).forEach(([file, title]) => {
   addNormalRecipe(file, title);
-});
-
-// 2. Add 5 extra recipes using duplicate images with modified unique names to reach exactly 100
-const firstFiveFiles = Object.keys(normalImageTitles).slice(0, 5);
-firstFiveFiles.forEach((file, idx) => {
-  const baseTitle = normalImageTitles[file];
-  addNormalRecipe(file, `${baseTitle} Specialty`);
 });
 
 // Write the file

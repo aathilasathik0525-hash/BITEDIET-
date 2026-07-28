@@ -69,20 +69,29 @@ function Register() {
 
     setSubmitting(true);
 
+    const trimmedForm = {
+      fullName: form.fullName.trim(),
+      gender: form.gender,
+      age: form.age.trim(),
+      phone: form.phone.trim(),
+      email: form.email.trim(),
+      username: form.username.trim(),
+      password: form.password,
+    };
+
     try {
       try {
-        await registerUser(form.email, form.password);
+        await registerUser(trimmedForm.email, trimmedForm.password);
       } catch (firebaseError) {
         console.warn("Firebase registration unavailable, using local fallback.", firebaseError);
       }
 
       const existingUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
-      const updatedUsers = [...existingUsers, { ...form }];
+      const updatedUsers = [...existingUsers, trimmedForm];
       localStorage.setItem("registeredUsers", JSON.stringify(updatedUsers));
-      localStorage.setItem("userProfile", JSON.stringify({ ...form }));
 
-      alert("Registration Successful 🎉");
-      navigate("/", { replace: true });
+      alert("Registration Successful! Please log in to continue.");
+      navigate("/login", { replace: true });
     } catch (error) {
       setErrors({ submit: error.message || "Registration failed." });
     } finally {

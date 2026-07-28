@@ -76,6 +76,28 @@ function Settings() {
   const handleSaveHealthPrefs = (type, goal) => {
     localStorage.setItem("patientType", type);
     localStorage.setItem("dailyCalorieGoal", goal);
+
+    try {
+      const userProfile = JSON.parse(localStorage.getItem("userProfile") || "{}");
+      userProfile.patientType = type;
+      userProfile.dailyCalorieGoal = goal;
+      localStorage.setItem("userProfile", JSON.stringify(userProfile));
+
+      const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
+      const updatedUsers = registeredUsers.map(user => {
+        if (
+          (user.username && user.username === userProfile.username) || 
+          (user.email && user.email === userProfile.email)
+        ) {
+          return { ...user, patientType: type, dailyCalorieGoal: goal };
+        }
+        return user;
+      });
+      localStorage.setItem("registeredUsers", JSON.stringify(updatedUsers));
+    } catch (e) {
+      console.error("Failed to save health preferences permanently", e);
+    }
+
     alert("Health preferences updated successfully! ✅");
   };
 

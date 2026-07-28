@@ -151,17 +151,17 @@ function parseInstructions(instrStr) {
 
 function getBpCategory(recipeName) {
   const lower = recipeName.toLowerCase();
-  if (lower.match(/smoothie|tea|coffee|juice|shake|milk|drink|beverage|shorba|soup|rasam/i)) {
+  if (lower.match(/smoothie|tea|coffee|juice|shake|milk|drink|beverage|shorba|soup|rasam|thandai|lassi/i)) {
     return 'Drink';
   }
-  if (lower.match(/idli|dosa|chilla|upma|poha|breakfast|paratha|puri|toast|porridge|oats|pancake|kanji/i)) {
+  if (lower.match(/idli|dosa|chilla|upma|poha|breakfast|paratha|puri|toast|porridge|oats|pancake|kanji|appam|puttu|pongal|thalipeeth/i)) {
     return 'Breakfast';
   }
-  if (lower.match(/chutney|pachadi|ladoo|kheer|halwa|bite|fritter|tikki|chaat|makhana|snack|appetizer|custard|plums|apples|payasam/i)) {
+  if (lower.match(/chutney|pachadi|ladoo|kheer|halwa|bite|fritter|tikki|chaat|makhana|snack|appetizer|custard|plums|apples|payasam|jalebi|barfi|samosa|rasgulla|jamun|kachori|dhokla|vada|pakora|bhel|kebab|skewers|modak|brownie/i)) {
     return 'Snack';
   }
-  if (lower.match(/pulao|rice|sambar|kootu|thoran|curry|dal|gravy|stew|sabzi|biryani/i)) {
-    return (recipeName.length % 2 === 0) ? 'Lunch' : 'Dinner';
+  if (lower.match(/pulao|rice|biryani|sambar|khichdi|thali/i)) {
+    return 'Lunch';
   }
   return 'Dinner';
 }
@@ -259,13 +259,13 @@ function addBpRecipe(title, fileIndex) {
   
   const category = getBpCategory(title);
   
-  let uniqueTitle = title;
-  let suffix = 2;
-  while (usedNames.has(uniqueTitle.toLowerCase().trim())) {
-    uniqueTitle = `${title} ${suffix}`;
-    suffix++;
+  const lowerTitle = title.toLowerCase().trim();
+  if (usedNames.has(lowerTitle)) {
+    console.log(`Skipping duplicate title in BP dataset: "${title}"`);
+    return;
   }
-  usedNames.add(uniqueTitle.toLowerCase().trim());
+  usedNames.add(lowerTitle);
+  let uniqueTitle = title;
   
   const nameLength = uniqueTitle.length;
   const baseCalories = 200 + (nameLength % 9) * 18;
@@ -281,6 +281,9 @@ function addBpRecipe(title, fileIndex) {
   
   const healthBenefits = getBpHealthBenefits(uniqueTitle, category);
   
+  const cookMins = parseInt(String(cookTime || '').match(/\d+/)?.[0] || '20', 10);
+  const difficulty = cookMins <= 20 ? 'Easy' : cookMins <= 40 ? 'Medium' : 'Hard';
+
   const formattedIndex = String(fileIndex).padStart(3, '0');
   const imagePath = `/images/bp/BPFoodItems_extracted/page_${formattedIndex}.jpg`;
   
@@ -302,6 +305,7 @@ function addBpRecipe(title, fileIndex) {
     fat: fat,
     fiber: fiber,
     cookingTime: cookTime,
+    difficulty: difficulty,
     servings: servings,
     healthBenefits: healthBenefits,
     source: 'BPFoodItems.docx'
@@ -312,9 +316,6 @@ function addBpRecipe(title, fileIndex) {
 for (let i = 1; i <= 99; i++) {
   addBpRecipe(bpImageTitles[i], i);
 }
-
-// 2. Add 1 extra recipe to reach exactly 100
-addBpRecipe("Simple Stewed Apples with Cinnamon and Cardamom Extra", 2);
 
 // Write the file
 const content = `const bpRecipes = ${JSON.stringify(finalRecipes, null, 2)};\n\nexport default bpRecipes;\n`;

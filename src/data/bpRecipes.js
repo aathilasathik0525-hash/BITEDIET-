@@ -30,6 +30,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -109,6 +110,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -170,6 +172,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -204,6 +207,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -267,6 +271,7 @@ const bpRecipes = [
     "fat": "4g",
     "fiber": "3g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -310,6 +315,7 @@ const bpRecipes = [
     "fat": "3g",
     "fiber": "2g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -363,6 +369,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -406,6 +413,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -415,8 +423,8 @@ const bpRecipes = [
     "title": "Chicken Stew",
     "name": "Chicken Stew",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_009.jpg",
     "ingredients": [
       "300 grams Chicken - with bone cut into small pieces",
@@ -466,8 +474,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -503,6 +512,7 @@ const bpRecipes = [
     "fat": "2g",
     "fiber": "2g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -575,6 +585,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -614,6 +625,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -661,6 +673,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "200 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -706,6 +719,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -796,6 +810,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -857,6 +872,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -917,6 +933,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -926,8 +943,8 @@ const bpRecipes = [
     "title": "Crispy Baked Vegetable Samosas",
     "name": "Crispy Baked Vegetable Samosas",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/BPFoodItems_extracted/page_018.jpg",
     "ingredients": [
       "4 Baby corn - cut lengthwise",
@@ -951,14 +968,15 @@ const bpRecipes = [
       "Do the same for the rest.Serve the Crispy Vegetable Tempura Recipe, along with a Spicy Chicken Manchurian, Thai Style Noodles With Spinach And Leeks Recipe and a Aish el Saraya as a dessert for a special weekend dinner with friends and family."
     ],
     "calories": "254",
-    "protein": "15g",
+    "protein": "8g",
     "carbohydrates": "30g",
     "carbs": "30g",
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
+    "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -1047,6 +1065,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "6 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1056,8 +1075,8 @@ const bpRecipes = [
     "title": "Dal Dhokla",
     "name": "Dal Dhokla",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Snack",
+    "mealType": "Snack",
     "image": "/images/bp/BPFoodItems_extracted/page_020.jpg",
     "ingredients": [
       "1/4 cup Arhar dal (Split Toor Dal)",
@@ -1102,14 +1121,15 @@ const bpRecipes = [
       "Turn off the heat and add this tadka to the Rajasthani Panchmel DalServe the Rajasthani Panchmel Dal along with Bati or eat it along Spicy Paneer Pulao With Vegetables followed by the mouth-watering Traditional Rasmalai Recipe."
     ],
     "calories": "218",
-    "protein": "15g",
+    "protein": "8g",
     "carbohydrates": "34g",
     "carbs": "34g",
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -1182,6 +1202,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -1226,6 +1247,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Packed with magnesium, potassium, and calcium, forming a natural defense system that supports healthy blood flow and blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1273,6 +1295,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "200 servings",
     "healthBenefits": "Rich in potassium, an essential mineral that helps the kidneys excrete excess sodium and eases tension in blood vessel walls.",
     "source": "BPFoodItems.docx"
@@ -1320,6 +1343,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "5 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1363,6 +1387,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1410,6 +1435,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1453,6 +1479,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1516,6 +1543,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "5 servings",
     "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
     "source": "BPFoodItems.docx"
@@ -1558,6 +1586,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1595,6 +1624,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1635,6 +1665,7 @@ const bpRecipes = [
     "fat": "3g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1688,6 +1719,7 @@ const bpRecipes = [
     "fat": "5g",
     "fiber": "4g",
     "cookingTime": "55 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1754,6 +1786,7 @@ const bpRecipes = [
     "fat": "2g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Contains active organosulfur compounds like allicin, which help dilate blood vessels and naturally lower arterial blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1806,6 +1839,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -1847,6 +1881,7 @@ const bpRecipes = [
     "fat": "5g",
     "fiber": "4g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1905,6 +1940,7 @@ const bpRecipes = [
     "fat": "5g",
     "fiber": "4g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -1975,6 +2011,7 @@ const bpRecipes = [
     "fat": "2g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Packed with magnesium, potassium, and calcium, forming a natural defense system that supports healthy blood flow and blood pressure.",
     "source": "BPFoodItems.docx"
@@ -2015,6 +2052,7 @@ const bpRecipes = [
     "fat": "4g",
     "fiber": "3g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -2077,6 +2115,7 @@ const bpRecipes = [
     "fat": "4g",
     "fiber": "3g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -2135,6 +2174,7 @@ const bpRecipes = [
     "fat": "4g",
     "fiber": "3g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -2187,6 +2227,7 @@ const bpRecipes = [
     "fat": "9g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -2246,6 +2287,7 @@ const bpRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -2282,6 +2324,7 @@ const bpRecipes = [
     "fat": "3g",
     "fiber": "2g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "500 servings",
     "healthBenefits": "Rich in potassium, an essential mineral that helps the kidneys excrete excess sodium and eases tension in blood vessel walls.",
     "source": "BPFoodItems.docx"
@@ -2335,6 +2378,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "5 mins",
+    "difficulty": "Easy",
     "servings": "6 servings",
     "healthBenefits": "Rich in potassium, an essential mineral that helps the kidneys excrete excess sodium and eases tension in blood vessel walls.",
     "source": "BPFoodItems.docx"
@@ -2344,8 +2388,8 @@ const bpRecipes = [
     "title": "Avial (Kerala Style Mixed Veg Curry)",
     "name": "Avial (Kerala Style Mixed Veg Curry)",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_045.jpg",
     "ingredients": [
       "1 -",
@@ -2378,8 +2422,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "5 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -2437,6 +2482,7 @@ const bpRecipes = [
     "fat": "3g",
     "fiber": "2g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -2499,6 +2545,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "3 servings",
     "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
@@ -2538,6 +2585,7 @@ const bpRecipes = [
     "fat": "9g",
     "fiber": "6g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -2573,6 +2621,7 @@ const bpRecipes = [
     "fat": "8g",
     "fiber": "5g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "12 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -2612,6 +2661,7 @@ const bpRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -2669,6 +2719,7 @@ const bpRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -2726,6 +2777,7 @@ const bpRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -2777,6 +2829,7 @@ const bpRecipes = [
     "fat": "11g",
     "fiber": "8g",
     "cookingTime": "39 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -2823,6 +2876,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -2857,6 +2911,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -2899,6 +2954,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -2966,6 +3022,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3012,6 +3069,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -3046,6 +3104,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3082,6 +3141,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "6 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3126,6 +3186,7 @@ const bpRecipes = [
     "fat": "9g",
     "fiber": "6g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Contains beta-glucans and soluble fiber, which help reduce arterial plaque buildup, improve blood flow, and support heart health.",
     "source": "BPFoodItems.docx"
@@ -3186,6 +3247,7 @@ const bpRecipes = [
     "fat": "10g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "3 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -3246,6 +3308,7 @@ const bpRecipes = [
     "fat": "9g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "3 servings",
     "healthBenefits": "Low-sodium, high-fiber breakfast designed to reduce vascular resistance and support steady, healthy blood pressure levels.",
     "source": "BPFoodItems.docx"
@@ -3255,8 +3318,8 @@ const bpRecipes = [
     "title": "Rajasthani Bajra Khichdi",
     "name": "Rajasthani Bajra Khichdi",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/BPFoodItems_extracted/page_064.jpg",
     "ingredients": [
       "1 cup millet flour",
@@ -3292,8 +3355,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
+    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3301,8 +3365,8 @@ const bpRecipes = [
     "title": "Moong Dal Khichdi",
     "name": "Moong Dal Khichdi",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/BPFoodItems_extracted/page_065.jpg",
     "ingredients": [
       "1/2 cup Green Moong Dal (Whole)",
@@ -3332,8 +3396,9 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
+    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3341,8 +3406,8 @@ const bpRecipes = [
     "title": "South Indian Lemon Rice (Chitranna)",
     "name": "South Indian Lemon Rice (Chitranna)",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/BPFoodItems_extracted/page_066.jpg",
     "ingredients": [
       "1 cup rice",
@@ -3386,8 +3451,9 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
+    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3455,6 +3521,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Rich in potassium, an essential mineral that helps the kidneys excrete excess sodium and eases tension in blood vessel walls.",
     "source": "BPFoodItems.docx"
@@ -3464,8 +3531,8 @@ const bpRecipes = [
     "title": "Vegetable Pulao",
     "name": "Vegetable Pulao",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/BPFoodItems_extracted/page_068.jpg",
     "ingredients": [
       "1",
@@ -3498,8 +3565,9 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
+    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3552,6 +3620,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
@@ -3606,6 +3675,7 @@ const bpRecipes = [
     "fat": "4g",
     "fiber": "3g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -3665,6 +3735,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "25 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3674,8 +3745,8 @@ const bpRecipes = [
     "title": "Raw Banana Sabzi",
     "name": "Raw Banana Sabzi",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_072.jpg",
     "ingredients": [
       "3 Raw Banana - chopped to cubes",
@@ -3708,6 +3779,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Rich in potassium, an essential mineral that helps the kidneys excrete excess sodium and eases tension in blood vessel walls.",
     "source": "BPFoodItems.docx"
@@ -3717,8 +3789,8 @@ const bpRecipes = [
     "title": "Indian Paneer Capsicum Sabzi",
     "name": "Indian Paneer Capsicum Sabzi",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_073.jpg",
     "ingredients": [
       "3 liter Milk",
@@ -3755,8 +3827,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "60 mins",
+    "difficulty": "Hard",
     "servings": "200 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3818,6 +3891,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3827,8 +3901,8 @@ const bpRecipes = [
     "title": "Gawar Ki Sabzi (Cluster Beans Curry)",
     "name": "Gawar Ki Sabzi (Cluster Beans Curry)",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_075.jpg",
     "ingredients": [
       "300 grams Gawar Phali (Kothavarangai / Cluster beans) - cleaned and cut into 1 inch pieces",
@@ -3859,8 +3933,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -3918,6 +3993,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -3927,8 +4003,8 @@ const bpRecipes = [
     "title": "Easy Mixed Vegetable Curry",
     "name": "Easy Mixed Vegetable Curry",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_077.jpg",
     "ingredients": [
       "3 Hot Dog Bread",
@@ -3969,8 +4045,9 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "3 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -4037,6 +4114,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "45 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4081,6 +4159,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4130,6 +4209,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4181,6 +4261,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4249,6 +4330,7 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4258,8 +4340,8 @@ const bpRecipes = [
     "title": "Dry Karela Sabzi (Bitter Gourd Stir Fry)",
     "name": "Dry Karela Sabzi (Bitter Gourd Stir Fry)",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_083.jpg",
     "ingredients": [
       "nan"
@@ -4279,8 +4361,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -4347,6 +4430,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "35 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4414,6 +4498,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Packed with magnesium, potassium, and calcium, forming a natural defense system that supports healthy blood flow and blood pressure.",
     "source": "BPFoodItems.docx"
@@ -4466,6 +4551,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4512,6 +4598,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4568,6 +4655,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4577,8 +4665,8 @@ const bpRecipes = [
     "title": "Bottle Gourd Sabzi (Lauki Sabzi)",
     "name": "Bottle Gourd Sabzi (Lauki Sabzi)",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_089.jpg",
     "ingredients": [
       "1 Bottle gourd (lauki) - (about 4 cups of diced bottle gourd)",
@@ -4622,8 +4710,9 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -4680,6 +4769,7 @@ const bpRecipes = [
     "fat": "5g",
     "fiber": "4g",
     "cookingTime": "15 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Hydrating, sugar-free beverage rich in natural electrolytes to help flush out excess sodium and ease blood pressure.",
     "source": "BPFoodItems.docx"
@@ -4745,6 +4835,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
     "healthBenefits": "Packed with magnesium, potassium, and calcium, forming a natural defense system that supports healthy blood flow and blood pressure.",
     "source": "BPFoodItems.docx"
@@ -4754,8 +4845,8 @@ const bpRecipes = [
     "title": "Easy Black Eyed Peas Curry",
     "name": "Easy Black Eyed Peas Curry",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_092.jpg",
     "ingredients": [
       "2 corn cob - cut into 1 inch pieces",
@@ -4836,8 +4927,9 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -4902,6 +4994,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "120 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4952,6 +5045,7 @@ const bpRecipes = [
     "fat": "12g",
     "fiber": "6g",
     "cookingTime": "20 mins",
+    "difficulty": "Easy",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -4997,6 +5091,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "10 mins",
+    "difficulty": "Easy",
     "servings": "2 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -5070,6 +5165,7 @@ const bpRecipes = [
     "fat": "13g",
     "fiber": "7g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -5079,8 +5175,8 @@ const bpRecipes = [
     "title": "Toor Dal Tadka",
     "name": "Toor Dal Tadka",
     "disease": "Blood Pressure",
-    "category": "Lunch",
-    "mealType": "Lunch",
+    "category": "Dinner",
+    "mealType": "Dinner",
     "image": "/images/bp/BPFoodItems_extracted/page_097.jpg",
     "ingredients": [
       "1-1/2",
@@ -5144,8 +5240,9 @@ const bpRecipes = [
     "fat": "14g",
     "fiber": "8g",
     "cookingTime": "70 mins",
+    "difficulty": "Hard",
     "servings": "4 servings",
-    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
+    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
   },
   {
@@ -5221,6 +5318,7 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "40 mins",
+    "difficulty": "Medium",
     "servings": "4 servings",
     "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
     "source": "BPFoodItems.docx"
@@ -5230,8 +5328,8 @@ const bpRecipes = [
     "title": "Plain Moong Dal Khichdi",
     "name": "Plain Moong Dal Khichdi",
     "disease": "Blood Pressure",
-    "category": "Dinner",
-    "mealType": "Dinner",
+    "category": "Lunch",
+    "mealType": "Lunch",
     "image": "/images/bp/BPFoodItems_extracted/page_099.jpg",
     "ingredients": [
       "1/2 cup Green Moong Dal (Whole)",
@@ -5261,87 +5359,9 @@ const bpRecipes = [
     "fat": "15g",
     "fiber": "9g",
     "cookingTime": "30 mins",
+    "difficulty": "Medium",
     "servings": "2 servings",
-    "healthBenefits": "Light, low-sodium dinner that promotes blood vessel relaxation and healthy overnight blood pressure regulation.",
-    "source": "BPFoodItems.docx"
-  },
-  {
-    "id": 200,
-    "title": "Simple Stewed Apples with Cinnamon and Cardamom Extra",
-    "name": "Simple Stewed Apples with Cinnamon and Cardamom Extra",
-    "disease": "Blood Pressure",
-    "category": "Snack",
-    "mealType": "Snack",
-    "image": "/images/bp/BPFoodItems_extracted/page_002.jpg",
-    "ingredients": [
-      "1 cup Confectioners sugar",
-      "3/4 cup Almond Meal (Badam Powder)",
-      "2 Egg whites - aged for 2-3 days at room temperature",
-      "1/4 cup Sugar - superfine",
-      "1/4 teaspoon Cardamom Powder (Elaichi)",
-      "Food Color - few drops of your choice",
-      "70 grams Chocolate Bar - semi sweet",
-      "5 tablespoons Double Cream",
-      "1 tablespoon Butter (unsalted) - at room temperature",
-      "1/4 teaspoon Vanilla Extract"
-    ],
-    "procedure": [
-      "To begin making the Cardamom Macaroons recipe, in a food processor, process the almond flour, cardamom powder and icing sugar.",
-      "Sift the mixture in sieve twice discarding any almond lumps that are too big to pass through the sieve.Whisk the egg whites in clean dry bowl (no trace of water please) till soft peaks are formed.",
-      "Add the caster sugar, and beat on a low speed.",
-      "Once combined increase the speed to high and whisk till glossy and stiff peaks are formed (For me, it took 5 minutes on stand mixer on a high speed).",
-      "Add the food colour and beat for 25-30 seconds.",
-      "Please make sure not to over beat the egg whites.Sift the flour mixture over the whites and fold gently using a flexible spatula.",
-      "You need a smooth and shinny mix.",
-      "Do not make the batter too runny or the macaroons won’t rise as they should.",
-      "When you lift the batter up and let it drop down, it should slowly disappear into itself without leaving a peak.Transfer the batter to a pastry bag fitted with a 1/2-inch plain round tip.",
-      "On a parchment-lined baking sheet or Macaron mat and pipe the 3/4 inch rounds leaving 1-2 inch gap between each piping.Drag the pastry tip to the side of rounds rather than forming peaks.",
-      "Tap bottom of each sheet on work surface to release trapped air.Allow the piped macarons to stand on a room temperature for 30-45 minutes.",
-      "The stand time varies with temperature at different places.",
-      "What you need is the piped macarons to form a very thin, smooth crust, when you tap it lightly with your finger, the batter will not stick to your finger.Pre-heat the oven to 375 F.",
-      "Reduce oven temperature to 325 degrees.",
-      "Bake 1 sheet at a time, rotating halfway through, until macarons are crisp and firm, about 10 minutes.",
-      "After each batch, increase oven temperature to 375 degrees, heat for 5 minutes, then reduce to 325 degrees.Let macarons cool on sheets for 2 to 3 minutes, and then transfer to a wire rack.",
-      "If macarons stick, spray water underneath parchment on hot sheet.",
-      "The steam will help release macarons.When fully cooled, Sandwich 2 same size macarons with the filling of your choice.The next step is to make the chocolate ganache.",
-      "Heat cream in saucepan over medium-low heat until it comes to a boil.",
-      "Turn off the heat and add the chocolate and use a spatula or wooden spoon stir in a circular motion from the centre of the bowl until the chocolate and cream comes together into a smooth emulsion.",
-      "Add the butter and essence and stir will.",
-      "Let it cool at room temperature and the in fridge until firm enough to pipe.Serve Cardamom Macaroons along with hot Masala Chai as a tea time snack."
-    ],
-    "instructions": [
-      "To begin making the Cardamom Macaroons recipe, in a food processor, process the almond flour, cardamom powder and icing sugar.",
-      "Sift the mixture in sieve twice discarding any almond lumps that are too big to pass through the sieve.Whisk the egg whites in clean dry bowl (no trace of water please) till soft peaks are formed.",
-      "Add the caster sugar, and beat on a low speed.",
-      "Once combined increase the speed to high and whisk till glossy and stiff peaks are formed (For me, it took 5 minutes on stand mixer on a high speed).",
-      "Add the food colour and beat for 25-30 seconds.",
-      "Please make sure not to over beat the egg whites.Sift the flour mixture over the whites and fold gently using a flexible spatula.",
-      "You need a smooth and shinny mix.",
-      "Do not make the batter too runny or the macaroons won’t rise as they should.",
-      "When you lift the batter up and let it drop down, it should slowly disappear into itself without leaving a peak.Transfer the batter to a pastry bag fitted with a 1/2-inch plain round tip.",
-      "On a parchment-lined baking sheet or Macaron mat and pipe the 3/4 inch rounds leaving 1-2 inch gap between each piping.Drag the pastry tip to the side of rounds rather than forming peaks.",
-      "Tap bottom of each sheet on work surface to release trapped air.Allow the piped macarons to stand on a room temperature for 30-45 minutes.",
-      "The stand time varies with temperature at different places.",
-      "What you need is the piped macarons to form a very thin, smooth crust, when you tap it lightly with your finger, the batter will not stick to your finger.Pre-heat the oven to 375 F.",
-      "Reduce oven temperature to 325 degrees.",
-      "Bake 1 sheet at a time, rotating halfway through, until macarons are crisp and firm, about 10 minutes.",
-      "After each batch, increase oven temperature to 375 degrees, heat for 5 minutes, then reduce to 325 degrees.Let macarons cool on sheets for 2 to 3 minutes, and then transfer to a wire rack.",
-      "If macarons stick, spray water underneath parchment on hot sheet.",
-      "The steam will help release macarons.When fully cooled, Sandwich 2 same size macarons with the filling of your choice.The next step is to make the chocolate ganache.",
-      "Heat cream in saucepan over medium-low heat until it comes to a boil.",
-      "Turn off the heat and add the chocolate and use a spatula or wooden spoon stir in a circular motion from the centre of the bowl until the chocolate and cream comes together into a smooth emulsion.",
-      "Add the butter and essence and stir will.",
-      "Let it cool at room temperature and the in fridge until firm enough to pipe.Serve Cardamom Macaroons along with hot Masala Chai as a tea time snack."
-    ],
-    "calories": "344",
-    "protein": "11g",
-    "carbohydrates": "35g",
-    "carbs": "35g",
-    "fat": "13g",
-    "fiber": "7g",
-    "cookingTime": "60 mins",
-    "servings": "4 servings",
-    "healthBenefits": "Wholesome, sodium-conscious snack that provides sustained energy and essential minerals for arterial health.",
+    "healthBenefits": "Heart-healthy, nutrient-dense lunch option loaded with potassium and magnesium to support cardiovascular efficiency.",
     "source": "BPFoodItems.docx"
   }
 ];

@@ -1,60 +1,88 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { loginUser } from "../firebase/auth";
 
 function Login() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
-    const trimmedInput = String(email || "").trim();
-    const trimmedPassword = String(password || "");
+    const trimmedEmail = email.trim();
+    const trimmedPassword = password;
+
+    if (!trimmedEmail || !trimmedPassword) {
+      alert("Please enter email and password.");
+      return;
+    }
+
+    setLoading(true);
 
     try {
-      try {
-        await loginUser(trimmedInput, trimmedPassword);
-      } catch (firebaseError) {
-        console.warn("Firebase login unavailable, using saved user fallback.", firebaseError);
-      }
-
-      const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
-      const matchedUser = registeredUsers.find(
-        (user) => 
-          (String(user.email || "").toLowerCase() === trimmedInput.toLowerCase() || 
-           String(user.username || "").toLowerCase() === trimmedInput.toLowerCase()) && 
-          String(user.password || "") === trimmedPassword
+      const response = await fetch(
+        "http://localhost:8081/api/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: trimmedEmail,
+            password: trimmedPassword,
+          }),
+        }
       );
 
-      if (!matchedUser) {
-        alert("Invalid username/email or password.");
+      const result = await response.text();
+
+      console.log("Backend response:", result);
+
+      if (result === "User not found") {
+        alert("User not found.");
         return;
       }
 
-      localStorage.setItem("userProfile", JSON.stringify(matchedUser));
-      
-      // Restore patientType if it exists in the saved user profile
-      if (matchedUser.patientType) {
-        localStorage.setItem("patientType", matchedUser.patientType);
-      } else {
-        localStorage.removeItem("patientType");
+      if (result === "Invalid password") {
+        alert("Invalid password.");
+        return;
       }
 
-      alert("Login Successful ✅");
-      
-      if (matchedUser.patientType) {
-        navigate("/home");
-      } else {
+      if (result === "Login successful") {
+        // Save logged-in user
+        const userProfile = {
+          email: trimmedEmail,
+        };
+
+        localStorage.setItem(
+          "userProfile",
+          JSON.stringify(userProfile)
+        );
+
+        alert("Login Successful ✅");
+
+        // Go to patient type selection
         navigate("/patient");
+
+        return;
       }
+
+      alert("Login failed: " + result);
+
     } catch (error) {
-      alert(error.message || "Login failed.");
+      console.error("Login error:", error);
+
+      alert(
+        "Cannot connect to BiteDiet backend. Make sure Spring Boot is running on port 8081."
+      );
+
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
 
       <div className="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-md">
 
@@ -84,14 +112,19 @@ function Login() {
 
         <button
           onClick={handleLogin}
-          className="w-full bg-green-600 text-white py-4 rounded-xl hover:bg-green-700"
+          disabled={loading}
+          className="w-full bg-green-600 text-white py-4 rounded-xl hover:bg-green-700 disabled:bg-gray-400"
         >
-          Login
+          {loading ? "Logging in..." : "Login"}
         </button>
 
         <p className="text-center mt-6">
           Don't have an account?{" "}
-          <Link to="/register" className="text-green-600 font-bold">
+
+          <Link
+            to="/register"
+            className="text-green-600 font-bold"
+          >
             Register
           </Link>
         </p>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { registerUser } from "../firebase/auth";
 
 function Register() {
   const navigate = useNavigate();
@@ -15,45 +14,79 @@ function Register() {
     password: "",
     confirmPassword: "",
   });
+
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" }));
+
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "",
+      submit: "",
+    }));
   };
 
   const validate = () => {
     const nextErrors = {};
 
-    if (!form.fullName.trim()) nextErrors.fullName = "Full Name cannot be empty.";
+    if (!form.fullName.trim()) {
+      nextErrors.fullName = "Full Name cannot be empty.";
+    }
 
-    if (!form.gender) nextErrors.gender = "Please select a gender.";
+    if (!form.gender) {
+      nextErrors.gender = "Please select a gender.";
+    }
 
-    if (!form.age.trim()) nextErrors.age = "Age is required.";
-    else if (!/^\d+$/.test(form.age) || Number(form.age) < 1 || Number(form.age) > 120) {
+    if (!form.age.trim()) {
+      nextErrors.age = "Age is required.";
+    } else if (
+      !/^\d+$/.test(form.age) ||
+      Number(form.age) < 1 ||
+      Number(form.age) > 120
+    ) {
       nextErrors.age = "Age should be a valid number.";
     }
 
-    if (!form.phone.trim()) nextErrors.phone = "Phone Number is required.";
-    else if (!/^\d{10}$/.test(form.phone)) nextErrors.phone = "Phone Number must contain exactly 10 digits.";
-
-    if (!form.email.trim()) nextErrors.email = "Email ID is required.";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) nextErrors.email = "Enter a valid email address.";
-
-    if (!form.username.trim()) nextErrors.username = "Username is required.";
-    else {
-      const existingUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
-      const taken = existingUsers.some((user) => user.username.toLowerCase() === form.username.toLowerCase());
-      if (taken) nextErrors.username = "Username already exists.";
+    if (!form.phone.trim()) {
+      nextErrors.phone = "Phone Number is required.";
+    } else if (!/^\d{10}$/.test(form.phone)) {
+      nextErrors.phone =
+        "Phone Number must contain exactly 10 digits.";
     }
 
-    if (!form.password) nextErrors.password = "Password is required.";
-    else if (form.password.length < 6) nextErrors.password = "Password must be at least 6 characters.";
+    if (!form.email.trim()) {
+      nextErrors.email = "Email ID is required.";
+    } else if (
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
+    ) {
+      nextErrors.email = "Enter a valid email address.";
+    }
 
-    if (!form.confirmPassword) nextErrors.confirmPassword = "Please confirm your password.";
-    else if (form.password !== form.confirmPassword) nextErrors.confirmPassword = "Passwords do not match.";
+    if (!form.username.trim()) {
+      nextErrors.username = "Username is required.";
+    }
+
+    if (!form.password) {
+      nextErrors.password = "Password is required.";
+    } else if (form.password.length < 6) {
+      nextErrors.password =
+        "Password must be at least 6 characters.";
+    }
+
+    if (!form.confirmPassword) {
+      nextErrors.confirmPassword =
+        "Please confirm your password.";
+    } else if (form.password !== form.confirmPassword) {
+      nextErrors.confirmPassword =
+        "Passwords do not match.";
+    }
 
     return nextErrors;
   };
@@ -62,6 +95,7 @@ function Register() {
     event.preventDefault();
 
     const nextErrors = validate();
+
     if (Object.keys(nextErrors).length > 0) {
       setErrors(nextErrors);
       return;
@@ -69,7 +103,7 @@ function Register() {
 
     setSubmitting(true);
 
-    const trimmedForm = {
+    const userData = {
       fullName: form.fullName.trim(),
       gender: form.gender,
       age: form.age.trim(),
@@ -80,20 +114,40 @@ function Register() {
     };
 
     try {
-      try {
-        await registerUser(trimmedForm.email, trimmedForm.password);
-      } catch (firebaseError) {
-        console.warn("Firebase registration unavailable, using local fallback.", firebaseError);
+      const response = await fetch(
+        "http://localhost:8080/api/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        }
+      );
+
+      const message = await response.text();
+
+      if (!response.ok) {
+        throw new Error(
+          message || "Registration failed."
+        );
       }
 
-      const existingUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
-      const updatedUsers = [...existingUsers, trimmedForm];
-      localStorage.setItem("registeredUsers", JSON.stringify(updatedUsers));
+      alert(
+        "Registration Successful! Please log in to continue."
+      );
 
-      alert("Registration Successful! Please log in to continue.");
-      navigate("/login", { replace: true });
+      navigate("/login", {
+        replace: true,
+      });
     } catch (error) {
-      setErrors({ submit: error.message || "Registration failed." });
+      console.error("Registration error:", error);
+
+      setErrors({
+        submit:
+          error.message ||
+          "Registration failed. Please try again.",
+      });
     } finally {
       setSubmitting(false);
     }
@@ -102,11 +156,20 @@ function Register() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center py-10 px-4">
       <div className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-2xl">
-        <h1 className="text-4xl font-bold text-center text-green-600 mb-2">BiteDiet 🥗</h1>
-        <p className="text-center text-gray-500 mb-8">Create Account</p>
+
+        <h1 className="text-4xl font-bold text-center text-green-600 mb-2">
+          BiteDiet 🥗
+        </h1>
+
+        <p className="text-center text-gray-500 mb-8">
+          Create Account
+        </p>
 
         <form onSubmit={handleRegister} className="space-y-4">
+
+          {/* Full Name + Gender */}
           <div className="grid md:grid-cols-2 gap-4">
+
             <div>
               <input
                 name="fullName"
@@ -115,7 +178,12 @@ function Register() {
                 value={form.fullName}
                 onChange={handleChange}
               />
-              {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
+
+              {errors.fullName && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.fullName}
+                </p>
+              )}
             </div>
 
             <div>
@@ -130,11 +198,19 @@ function Register() {
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
               </select>
-              {errors.gender && <p className="text-red-500 text-sm mt-1">{errors.gender}</p>}
+
+              {errors.gender && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.gender}
+                </p>
+              )}
             </div>
+
           </div>
 
+          {/* Age + Phone */}
           <div className="grid md:grid-cols-2 gap-4">
+
             <div>
               <input
                 name="age"
@@ -145,7 +221,12 @@ function Register() {
                 value={form.age}
                 onChange={handleChange}
               />
-              {errors.age && <p className="text-red-500 text-sm mt-1">{errors.age}</p>}
+
+              {errors.age && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.age}
+                </p>
+              )}
             </div>
 
             <div>
@@ -158,11 +239,19 @@ function Register() {
                 value={form.phone}
                 onChange={handleChange}
               />
-              {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+
+              {errors.phone && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.phone}
+                </p>
+              )}
             </div>
+
           </div>
 
+          {/* Email + Username */}
           <div className="grid md:grid-cols-2 gap-4">
+
             <div>
               <input
                 name="email"
@@ -172,7 +261,12 @@ function Register() {
                 value={form.email}
                 onChange={handleChange}
               />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.email}
+                </p>
+              )}
             </div>
 
             <div>
@@ -183,11 +277,19 @@ function Register() {
                 value={form.username}
                 onChange={handleChange}
               />
-              {errors.username && <p className="text-red-500 text-sm mt-1">{errors.username}</p>}
+
+              {errors.username && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.username}
+                </p>
+              )}
             </div>
+
           </div>
 
+          {/* Password + Confirm Password */}
           <div className="grid md:grid-cols-2 gap-4">
+
             <div>
               <input
                 name="password"
@@ -197,7 +299,12 @@ function Register() {
                 value={form.password}
                 onChange={handleChange}
               />
-              {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
+
+              {errors.password && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.password}
+                </p>
+              )}
             </div>
 
             <div>
@@ -209,24 +316,46 @@ function Register() {
                 value={form.confirmPassword}
                 onChange={handleChange}
               />
-              {errors.confirmPassword && <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>}
+
+              {errors.confirmPassword && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.confirmPassword}
+                </p>
+              )}
             </div>
+
           </div>
 
-          {errors.submit && <p className="text-red-500 text-sm">{errors.submit}</p>}
+          {/* Submit Error */}
+          {errors.submit && (
+            <p className="text-red-500 text-sm">
+              {errors.submit}
+            </p>
+          )}
 
+          {/* Register Button */}
           <button
             type="submit"
             disabled={submitting}
             className="w-full bg-green-600 text-white py-4 rounded-xl hover:bg-green-700 disabled:opacity-60"
           >
-            {submitting ? "Creating account..." : "Register"}
+            {submitting
+              ? "Creating account..."
+              : "Register"}
           </button>
+
         </form>
 
         <p className="text-center mt-6">
-          Already have an account? <Link to="/login" className="text-green-600 font-bold">Login</Link>
+          Already have an account?{" "}
+          <Link
+            to="/login"
+            className="text-green-600 font-bold"
+          >
+            Login
+          </Link>
         </p>
+
       </div>
     </div>
   );

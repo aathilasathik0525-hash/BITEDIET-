@@ -21,7 +21,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost:8081/api/auth/login",
+        "http://localhost:8080/api/auth/login",
         {
           method: "POST",
           headers: {
@@ -34,46 +34,69 @@ function Login() {
         }
       );
 
-      const result = await response.text();
+      const result = await response.json();
 
       console.log("Backend response:", result);
+      console.log(
+        "PATIENT TYPE FROM BACKEND:",
+        result.patientType
+      );
 
-      if (result === "User not found") {
-        alert("User not found.");
-        return;
-      }
-
-      if (result === "Invalid password") {
-        alert("Invalid password.");
-        return;
-      }
-
-      if (result === "Login successful") {
-        // Save logged-in user
-        const userProfile = {
-          email: trimmedEmail,
-        };
-
-        localStorage.setItem(
-          "userProfile",
-          JSON.stringify(userProfile)
+      if (!response.ok) {
+        alert(
+          typeof result === "string"
+            ? result
+            : "Login failed."
         );
-
-        alert("Login Successful ✅");
-
-        // Go to patient type selection
-        navigate("/patient");
-
         return;
       }
 
-      alert("Login failed: " + result);
+      // Save complete logged-in user information
+      const userProfile = {
+        id: result.id,
+        fullName: result.fullName,
+        gender: result.gender,
+        age: result.age,
+        phone: result.phone,
+        email: result.email,
+        username: result.username,
+        patientType: result.patientType,
+      };
+
+      localStorage.setItem(
+        "userProfile",
+        JSON.stringify(userProfile)
+      );
+
+      // IMPORTANT:
+      // Save patientType separately because
+      // AppRoutes checks localStorage.patientType
+      if (result.patientType) {
+        localStorage.setItem(
+          "patientType",
+          result.patientType
+        );
+      }
+
+      alert("Login Successful ✅");
+
+      // Existing user
+      if (result.patientType) {
+        console.log("Existing patient → HOME");
+        navigate("/home");
+      }
+
+      // First-time user
+      else {
+        console.log("New patient → PATIENT SELECTION");
+        navigate("/patient");
+      }
 
     } catch (error) {
       console.error("Login error:", error);
 
       alert(
-        "Cannot connect to BiteDiet backend. Make sure Spring Boot is running on port 8081."
+        "Cannot connect to BiteDiet backend. Make sure Spring Boot is running on port 8080."
       );
 
     } finally {

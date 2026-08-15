@@ -3,30 +3,62 @@ import { useNavigate } from "react-router-dom";
 function PatientSelection() {
   const navigate = useNavigate();
 
-  const choose = (type) => {
-    localStorage.setItem("patientType", type);
-    
+  const choose = async (type) => {
     try {
-      const userProfile = JSON.parse(localStorage.getItem("userProfile") || "{}");
+      // Get logged-in user
+      const userProfile = JSON.parse(
+        localStorage.getItem("userProfile") || "{}"
+      );
+
+      if (!userProfile.email) {
+        alert("User information not found. Please login again.");
+        navigate("/login");
+        return;
+      }
+
+      // Save patient type locally
+      localStorage.setItem("patientType", type);
+
+      // Update user profile locally
       userProfile.patientType = type;
-      localStorage.setItem("userProfile", JSON.stringify(userProfile));
 
-      const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers") || "[]");
-      const updatedUsers = registeredUsers.map(user => {
-        if (
-          (user.username && user.username === userProfile.username) || 
-          (user.email && user.email === userProfile.email)
-        ) {
-          return { ...user, patientType: type };
+      localStorage.setItem(
+        "userProfile",
+        JSON.stringify(userProfile)
+      );
+
+      // Update patient type in MySQL through backend
+      const response = await fetch(
+        `http://localhost:8080/api/auth/patient-type?email=${encodeURIComponent(
+          userProfile.email
+        )}&patientType=${encodeURIComponent(type)}`,
+        {
+          method: "PUT",
         }
-        return user;
-      });
-      localStorage.setItem("registeredUsers", JSON.stringify(updatedUsers));
-    } catch (e) {
-      console.error("Failed to save patient selection permanently", e);
-    }
+      );
 
-    navigate("/home");
+      const result = await response.text();
+
+      console.log("Patient type update:", result);
+
+      if (!response.ok) {
+        alert("Failed to save patient type.");
+        return;
+      }
+
+      // Go to Home
+      navigate("/home");
+
+    } catch (error) {
+      console.error(
+        "Patient type update error:",
+        error
+      );
+
+      alert(
+        "Cannot connect to BiteDiet backend."
+      );
+    }
   };
 
   return (
